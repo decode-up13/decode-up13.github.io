@@ -1,7 +1,18 @@
 doctype html
 html(lang="fr")
+
   include ../includes/head.pug
-  body(class="bodyClass")
+
+
+  block vars
+    - var bodyClass = 'defaultClass'
+    - var withHeader = 'false'
+
+
+  body(class=bodyClass)
+    if withHeader == 'true'
+      include ../includes/header.pug
     main.wrapper
-      div(class="content")
+      block content
+
     include ../includes/footer.pug
