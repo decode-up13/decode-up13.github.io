@@ -1,5 +1,21 @@
 extends layout/layout.pug
 
 block title
-  title Our index
+  title Home
+
+append styles
+//- additional styles
+
+block vars
+  //- variables
+  - var bodyClass = 'homepage'
+
+block content
+  //- page content
+  video(class="background-video" id="landing-video" loop autoplay muted)
+    source(src="/src/video/sample-video.mp4")
+  .content-wrapper
+    .logo
+append scripts
+  //-additional scripts
 
