@@ -12,8 +12,10 @@ block vars
 
 block content
   //- page content
-  h1 HOMEPAGE
-
+  video(class="background-video" id="landing-video" loop autoplay muted)
+    source(src="/src/video/sample-video.mp4")
+  .content-wrapper
+    .logo
 append scripts
   //-additional scripts
 
