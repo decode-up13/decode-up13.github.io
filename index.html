@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Home</title>
+    <style>ul, p {
+  color: white; }
+
+.background-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; }
+
+.content-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%; }
+
+.credit-link {
+  position: absolute;
+  bottom: 0; }
+
+/*# sourceMappingURL=default.css.map */
+    </style>
+    <link href="/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="homepage">
+    <main class="wrapper">
+      <video class="background-video" id="landing-video" loop autoplay muted>
+        <source src="/src/video/sample-video.mp4">
+      </video>
+      <div class="content-wrapper">
+        <div class="logo"></div>
+      </div>
+    </main>
+    <footer class="wrapper"> 
+      <ul class="credit-link">
+        <li>© DIMIC 2018</li>
+        <li>Crédits</li>
+        <li>Mentions légales</li>
+      </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
