@@ -19,7 +19,7 @@ html, body {
 	border: 0;
 }
 
-nav {
+.menu-container {
 	visibility: hidden;
 	position: fixed;
 	right: 0;
