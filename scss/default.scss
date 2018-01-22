@@ -1,10 +1,29 @@
 @import './base/fonts';
+@import './base/color';
 
-ul, p {
-  color: white;
+h1, h2, ul, p {
+  color: $blanc;
 }
-
 h1 {
   font-family: $Francois-One;
-  color: white;
+  font-size: 60px;
+}
+h2 {
+  font-family: $Source-Sans-Pro-Bold;
+  font-size: 24px;
+}
+p {
+  font-family: $Source-Sans-Pro-Bold;
+  font-size: 16px;
+}
+.cta {
+  font-family: $Abel;
+  font-size: 14px;
+  color: $blanc;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cta:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
