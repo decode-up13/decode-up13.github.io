@@ -9,11 +9,12 @@ append styles
 block vars
   //- variables
   - var bodyClass = 'homepage'
+  - var withHeader = 'true'
 
 block content
   //- page content
   video(class="background-video" id="landing-video" loop autoplay muted)
-    source(src="/src/video/sample-video.mp4")
+    source(src="./src/video/sample-video.mp4")
   .content-wrapper
     .logo
 append scripts
