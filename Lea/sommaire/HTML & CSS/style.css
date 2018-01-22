@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#summary-container, #overlay-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.summary-item, .overlay-item {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;	
+}
+.summary-item {
+	width: 16.68vw;
+}
+
+.overlay-item {
+	width:16.8vw;
+}
+
+.overlay-item {
+	z-index: 0;
+}
+
+.summary-item {
+	z-index: 1;
+	background-size: cover;
+}
+
+.summary-item:hover{
+	opacity: 0.55;
+	background-size: 20vw;
+	animation-name: zoom;
+	anmation-duration: 3s;
+
+}
+
+@keyframes zoom {
+	0% {background-size : cover;}
+	10% {background-size : 109%;}
+	100% {background-size : 110%;}
+}
+
+
+/* Colors on hover */
+
+#overlay-item-lingerie {
+	background-color: #e8dcd6;
+}
+
+#overlay-item-bikini {
+	background-color: #716943;
+}
+
+#overlay-item-pantalon {
+	background-color: #000000;
+}
+
+#overlay-item-mini-jupe{
+	background-color: #ce8427 ;
+}
+
+#overlay-item-destroy {
+	background-color: #c5d92c;
+}
+
+#overlay-item-jupe-homme {
+	background-color: #46424d;
+}
+
+/* Background images*/
+
+#summary-item-lingerie {
+	background-image: url('images/lingerie.png');
+}
+
+#summary-item-bikini {
+	background-image: url('images/bikini.png');
+}
+
+#summary-item-pantalon {
+	background-image: url('images/pantalon.png');
+}
+
+#summary-item-mini-jupe {
+	background-image: url('images/mini-jupe.png');
+}
+
+#summary-item-destroy {
+	background-image: url('images/destroy.png');
+}
+
+#summary-item-jupe-homme {
+	background-image: url('images/jupe-homme.png');
+}
+
+
+
