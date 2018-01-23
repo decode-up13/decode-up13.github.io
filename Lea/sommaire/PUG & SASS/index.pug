@@ -3,27 +3,32 @@ html
   head
     meta(charset="UTF-8")
     title
-    link(rel="stylesheet" href="style.scss")
+    link(rel="stylesheet" href="style.css")
     link(href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet")
   body
-    #overlay-container
-      #overlay-item-lingerie.overlay-item
-      #overlay-item-bikini.overlay-item
-      #overlay-item-pantalon.overlay-item
-      #overlay-item-mini-jupe.overlay-item
-      #overlay-item-destroy.overlay-item
-      #overlay-item-jupe-homme.overlay-item
     #summary-container
-      a.summary-link(href="#" title="rubrique lingerie")
+      a.summary-link(href="#")
         #summary-item-lingerie.summary-item
-      a.summary-link(href="#" title="rubrique bikini")
+          #overlay-item-lingerie.overlay-item
+            h1.summary-title LINGERIE
+      a.summary-link(href="#")
         #summary-item-bikini.summary-item
-      a.summary-link(href="#" title="rubrique pantalon")
+          #overlay-item-bikini.overlay-item
+            h1.summary-title BIKINI
+      a.summary-link(href="#")
         #summary-item-pantalon.summary-item
-      a.summary-link(href="#" title="rubrique mini-jupe")
+          #overlay-item-pantalon.overlay-item
+            h1.summary-title PANTALON
+      a.summary-link(href="#")
         #summary-item-mini-jupe.summary-item
-      a.summary-link(href="#" title="rubrique pièces destroys")
+          #overlay-item-mini-jupe.overlay-item
+            h1.summary-title MINI-JUPE
+      a.summary-link(href="#")
         #summary-item-destroy.summary-item
-      a.summary-link(href="#" title="rubrique jupe pour homme")
+          #overlay-item-destroy.overlay-item
+            h1.summary-title PIECES DESTROY
+      a.summary-link(href="#")
         #summary-item-jupe-homme.summary-item
+          #overlay-item-jupe-homme.overlay-item
+            h1.summary-title JUPE POUR HOMME

@@ -4,7 +4,11 @@ body {
   overflow: hidden;
 }
 
-#summary-container, #overlay-container {
+a {
+  text-decoration: none;
+}
+
+#summary-container {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -14,47 +18,47 @@ body {
   left: 0;
 }
 
-.summary-item, .overlay-item {
+.summary-item {
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-.summary-item {
-  width: 16.68vw;
+  width: 16.8vw;
 }
 
 .overlay-item {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   width: 16.8vw;
-  z-index: 0;
+  opacity: 0;
 }
 
 .summary-item {
-  z-index: 1;
   background-size: cover;
-  &:hover {
-    opacity: 0.55;
-    background-size: 20vw;
-    animation-name: zoom;
-    anmation-duration: 3s;
-  }
 }
 
-@keyframes zoom {
-  0% {
-    background-size: cover;
-  }
-
-  10% {
-    background-size: 109%;
-  }
-
-  100% {
-    background-size: 110%;
-  }
+.overlay-item:hover {
+  opacity: 0.65;
 }
 
+.summary-title {
+  float: right;
+  font-family: 'Francois One';
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  margin-top: 2vh;
+  padding: 0;
+  font-size: 7vh;
+  -ms-writing-mode: tb-lr;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
 
 /* Colors on hover */
 
