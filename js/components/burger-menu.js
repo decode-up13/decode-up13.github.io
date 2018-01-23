@@ -3,10 +3,10 @@ var isActive = false;
 $('.burger-menu').on('click', function() {
 	if (isActive) {
 		$(this).removeClass('active');
-		$('nav').css("visibility", "hidden");
+		$('#menu-navigation').removeClass('active');
 	} else {
 		$(this).addClass('active');
-		$('nav').css("visibility", "visible");
+		$('#menu-navigation').addClass('active');
 	}
 
 	isActive = !isActive;
