@@ -1,5 +1,7 @@
 // components
 @import './components/menu';
 
-// pages
-@import './pages/landing';
+.underwear {
+  background: url('../src/images/bg-sous-vetements.png') no-repeat;
+  background-size: cover; 
+}
