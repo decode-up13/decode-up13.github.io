@@ -14,5 +14,6 @@ html(lang="fr")
       include ../includes/header.pug
     main.wrapper
       block content
-
-    include ../includes/footer.pug
+      
+    if isLanding != 'true'
+      include ../includes/footer.pug
