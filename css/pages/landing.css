@@ -1,6 +1,3 @@
-ul, p {
-  color: white; }
-
 .background-video {
   position: fixed;
   left: 0;
@@ -22,5 +19,3 @@ ul, p {
 .credit-link {
   position: absolute;
   bottom: 0; }
-
-/*# sourceMappingURL=default.css.map */
