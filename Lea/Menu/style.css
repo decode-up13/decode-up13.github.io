@@ -19,7 +19,7 @@ html, body {
 	border: 0;
 }
 
-.menu-container {
+nav {
 	visibility: hidden;
 	position: fixed;
 	right: 0;
@@ -41,20 +41,25 @@ ul {
 	display: flex;
 	flex-direction : column;
 	justify-content: center;
-	height: 80vh;	
+	height: 70vh;	
 }
 
 li {
 	line-height: 60px;
 }
 
-#menu-title {
+#menu-chapitres {
 	margin: 0;
 	width: 30vw;
 	padding-top : 50px;
 	padding-bottom: 30px;
 	border-bottom: 0.5px solid white;
-	
+}
+
+#menu-introduction {
+	margin: 0;
+	width: 30vw;
+	padding-top: 30px;
 }
 
 /* ANIMATION ICON BURGER */
