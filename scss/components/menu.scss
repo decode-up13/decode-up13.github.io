@@ -52,12 +52,20 @@ footer.wrapper {
 .footer-element {
   width: 33vw;
   text-align: center;
+  &:first-child {
+    text-align: left;
+  }
+  &:last-child {
+    text-align: right;
+  }
 }
+
 ul.credit-element {
   padding-left: 0;
   display: inline-block;
   margin-right: 2vw;
 }
+
 .credit-item {
   margin-left: 10px;
   display: inline-block;
@@ -88,10 +96,11 @@ ul.credit-element {
 }
 
 #footer-img{
-  height: 50px;
+  height: 60px;
   cursor: pointer;
   margin-left: 2vw;
 }
+
 //
 // burger menu
 //
