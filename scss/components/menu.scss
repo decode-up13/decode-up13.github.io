@@ -3,22 +3,6 @@
 //
 .menu-list {
   padding-left: 0;
-  &.menu-credits {
-    li {
-      width: 100px;
-      &:last-child {
-        width: 30px;
-        &:hover:after {
-          width: 30px;
-        }
-      }
-      &:hover:after {
-        width: 100px;
-
-      
-      }
-    }
-  }
 }
 .menu-element {
   position: relative;
@@ -56,6 +40,33 @@
 // footer
 //
 
+.menu-credits {
+  li {
+    width: 100px;
+    margin: 0;
+    &:last-child {
+      margin-right: 2vw;
+      width: 30px;
+      &:hover:after {
+        width: 25px;
+        margin-left: 3px;
+      }
+    }
+    &:first-child {
+      width: 100px;
+      &:hover:after {
+        width: 100px;
+        margin-left: 0px;
+      }
+    }
+    &:hover:after {
+      width: 70px;
+      margin-left: 15px;
+
+    
+    }
+  }
+}
 
 footer.wrapper {
   position: absolute;
@@ -64,15 +75,18 @@ footer.wrapper {
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .footer-element {
-  width: 33vw;
+  width: 15vw;
   text-align: center;
   &:first-child {
+    width: 42.5vw;
     text-align: left;
   }
   &:last-child {
+    width: 42.5vw;
     text-align: right;
   }
 }
