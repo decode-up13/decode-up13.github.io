@@ -1,8 +1,20 @@
+include ../components/popup.pug
+
+
++popup (about)
++popup (credits)
++popup (rs)
 footer.wrapper 
-  ul.credit-element
-    li.credit-item © DIMIC 2018
-    li.credit-item Crédits
-    li.credit-item Mentions légales
+  .footer-element
+    img#footer-img(src="../src/images/logo-decode-white.png")
+  .footer-element
+    p#footer-element-copyright © 2018 DIMIC
+  .footer-element
+    ul.credit-element
+      li.credit-item Accessibilité
+      li.credit-item A Propos
+      li.credit-item Crédits
+      li.credit-item RS
 
 block scripts
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')

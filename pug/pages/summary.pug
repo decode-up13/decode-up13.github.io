@@ -1,12 +1,20 @@
-doctype html
-html
-  head
-    meta(charset="UTF-8")
-    title
-    link(rel="stylesheet" href="style.css")
-    link(href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet")
-  body
+extends ../layout/layout.pug
+
+block title
+  title DECODE - Sommaire
+
+append styles
+    //- additional styles
+    link(href="./styles/pages/summary.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'summary'
+  - var withHeader = 'false'
+
+block content 
+  //- page content
+  .content-wrapper
     #summary-container
       a.summary-link(href="#")
         #summary-item-lingerie.summary-item
@@ -32,3 +40,6 @@ html
         #summary-item-jupe-homme.summary-item
           #overlay-item-jupe-homme.overlay-item
             h1.summary-title JUPE POUR HOMME
+
+append scripts
+  //-additional scripts

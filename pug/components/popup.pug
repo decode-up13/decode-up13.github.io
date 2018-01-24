@@ -1,0 +1,85 @@
+mixin popup (type)
+    if type == about
+        .popup#popup-about
+            button#cross(type="button")
+                span.cross-bar
+            h1.popup-title A PROPOS
+            p#popup-content-about.popup-content
+                | Bikini, mini-jupe, pantalon... leur point commun : le scandale !
+                | Ce web-documentaire vous fait (re)découvrir le vêtement sous un autre angle.
+                | Fusion entre onze étudiants du Master 1 Design d’interface multimédia et
+                | Internet et du Master 1 Innovations en Communication de l’Université Paris 13
+                | de septembre 2017 à janvier 2018, nous avons conçu ce web-documentaire tiré
+                | du documentaire <em>Tenue correcte exigée, quand le vêtement fait scandale.</em> (2016)
+                | pour l’enseignement “Conception et réalisation graphique multimédia”.
+                | La richesse des archives qu’illustre ce documentaire et les regards croisés
+                | des différents intervenants nous ont confortés dans ce choix.
+                | Ce web-documentaire explore les scandales de l’histoire de la mode en y fournissant
+                | accessibilité et pluralité. C’est pourquoi, nous avons mis un accent sur
+                | l’accessibilité en proposant une interface et un web-documentaire accessible
+                | aux personnes malentendantes et sourdes. Nous avons mis un accent sur les
+                | dispositifs bilingues afin de garantir sa compréhension en anglais et arabe.
+
+    if type == credits
+        .popup#popup-credits
+            button#cross(type="button")
+                span.cross-bar
+            h1.popup-title CREDITS
+            p.popup-content#popup-content-credits
+                | Une réalisation d’étudiants de la promotion 2017/2018 en Master 1 Innovations en Communication et Design d'Interfaces Multimédia et Internet de l’Université Paris 13.
+                br
+                br
+                | 		Chef de projet : Sophie GOMIS
+                br
+                | 		Responsable qualité  : Rania DRIDI 
+                br
+                | 		Responsable design d’expérience : Solenn MASSENGO 
+                br
+                | 		Responsable accessibilité : Léa MARIE 
+                br
+                | 		Responsable éditorial : Hawa-Kany FOFANA 
+                br
+                | 		Responsable des contenus audiovisuels : Khadim DIOUF 
+                br
+                | 		Responsable développement: Tojo ANDRIAMANGA 
+                br
+                | 		Chargées de contenu : Léa MARIE / Sophie GOMIS 
+                br
+                | 		Rédacteurs : Jessica KABASSEMA / Nadia BEN FADHEL / Rania DRIDI / Khadim DIOUF / Cynthia KOFFI 
+                br
+                | 		Directeur artistique : Solenn MASSENGO 
+                br
+                | 		Designers UX : Solenn MASSENGO / Cheikh DIONE 
+                br
+                | 		Designers d’interaction : Solenn MASSENGO / Tojo ANDRIAMANGA / Léa MARIE 
+                br
+                | 		Graphiste : Solenn MASSENGO 
+                br
+                | 		Intégrateur web : Cynthia KOFFI 
+                br
+                | 		Développeurs Front-End : Léa MARIE / Nadia BEN FADHEL 
+                br
+                | 		Architecte d'information : Solenn MASSENGO / Cheikh DIONE 
+                br
+                br
+                | 		Merci à Guy Bilisko, Ines Laitano et Hernani Correia pour leur accompagnement.
+
+    if type == rs
+        .popup#popup-rs
+            button#cross(type="button")
+                span.cross-bar
+            h1.popup-title RESEAUX SOCIAUX
+            #popup-content-rs.popup-content
+                .popup-content-rs-div
+                    a(href="#")
+                        img.img-rs(src="../src/images/picto-facebook.png" alt="notre page facebook")
+                        p FACEBOOK
+                .popup-content-rs-div
+                    a(href="#")
+                        img.img-rs(src="../src/images/picto-twitter.png" alt="notre page facebook")
+                        p TWITTER
+                .popup-content-rs-div
+                    a(href="#")
+                        img.img-rs(src="../src/images/picto-instagram.png" alt="notre page facebook")
+                        p INSTAGRAM
+

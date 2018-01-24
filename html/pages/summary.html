@@ -5,38 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1200">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>DECODE - Le sous vêtement</title>
+    <title>DECODE - Sommaire</title>
     <link href="./styles/main.min.css" rel="stylesheet">
-    <link href="./styles/pages/underwear.min.css" rel="stylesheet">
+    <link href="./styles/pages/summary.min.css" rel="stylesheet">
   </head>
-  <body class="underwear">
-    <header class="top-navigation">
-      <ul class="menu-list">
-        <li class="menu-element">français</li>
-        <li class="menu-element">english</li>
-        <li class="menu-element">español</li>
-        <li class="menu-element">العربي</li>
-        <li class="menu-element">日本の</li>
-      </ul>
-      <button class="burger-menu" type="button"><span class="bar"></span></button>
-      <nav class="menu-left" id="menu-navigation">
-        <div class="menu-title-top">CHAPITRES</div>
-        <div class="menu-content">
-          <ul class="menu-left-list">
-            <li>LE SOUS VETEMENT</li>
-            <li>LE BIKINI</li>
-            <li>LE PANTALON</li>
-            <li>LA MINI JUPE</li>
-            <li>LES PIECES DESTROY</li>
-            <li>LA JUPE POUR HOMME</li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <body class="summary">
     <main class="wrapper">
       <div class="content-wrapper">
-        <h1 class="title">le sous vêtement</h1>
-        <p class="description">L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge, monokini, string... Le sous-vêtement subit d'énormes transformations au fil des années. Des sous-vêtements comme la lingerie dentelle vont s'identifier à une figure de l’érotisme.</p><img class="picto-helm" src="src/images/picto-helm.svg" alt="">
+        <div id="summary-container"><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-lingerie">
+              <div class="overlay-item" id="overlay-item-lingerie">
+                <h1 class="summary-title">SOUS-VETEMENT</h1>
+              </div>
+            </div></a><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-bikini">
+              <div class="overlay-item" id="overlay-item-bikini">
+                <h1 class="summary-title">BIKINI</h1>
+              </div>
+            </div></a><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-pantalon">
+              <div class="overlay-item" id="overlay-item-pantalon">
+                <h1 class="summary-title">PANTALON</h1>
+              </div>
+            </div></a><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-mini-jupe">
+              <div class="overlay-item" id="overlay-item-mini-jupe">
+                <h1 class="summary-title">MINI-JUPE</h1>
+              </div>
+            </div></a><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-destroy">
+              <div class="overlay-item" id="overlay-item-destroy">
+                <h1 class="summary-title">PIECES DESTROY</h1>
+              </div>
+            </div></a><a class="summary-link" href="#">
+            <div class="summary-item" id="summary-item-jupe-homme">
+              <div class="overlay-item" id="overlay-item-jupe-homme">
+                <h1 class="summary-title">JUPE POUR HOMME</h1>
+              </div>
+            </div></a></div>
       </div>
     </main>
         <div class="popup" id="popup-about">
@@ -151,18 +157,11 @@
           </div>
         </div>
     <footer class="wrapper"> 
-      <div class="footer-element"><img id="footer-img" src="../src/images/logo-decode-white.png"></div>
-      <div class="footer-element">
-        <p id="footer-element-copyright">© 2018 DIMIC</p>
-      </div>
-      <div class="footer-element">
-        <ul class="credit-element">
-          <li class="credit-item">Accessibilité</li>
-          <li class="credit-item">A Propos</li>
-          <li class="credit-item">Crédits</li>
-          <li class="credit-item">RS</li>
-        </ul>
-      </div>
+      <ul class="credit-element">
+        <li class="credit-item">© DIMIC 2018</li>
+        <li class="credit-item">Crédits</li>
+        <li class="credit-item">Mentions légales</li>
+      </ul>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/build/main.min.js"></script>
