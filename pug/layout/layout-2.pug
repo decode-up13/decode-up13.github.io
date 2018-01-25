@@ -10,7 +10,10 @@ html(lang="fr")
 
 
   body(class=bodyClass)
+    .chapter-page
+      include ../includes/header.pug
 
-    main.wrapper
-      block content
-
+      main.wrapper
+        block content
+        
+      include ../includes/footer.pug

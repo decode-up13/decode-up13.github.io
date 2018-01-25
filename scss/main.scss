@@ -6,13 +6,18 @@
 @import './components/menu';
 @import './components/popup';
 
+body {
+  // overflow: hidden;
+}
+
 h1, h2, ul, p {
   color: $blanc;
 }
 h1 {
   font-family: $Francois-One;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 50px;
+  letter-spacing: 2px;
 }
 h2 {
   font-family: $Source-Sans-Pro-Bold;
@@ -23,7 +28,6 @@ p {
   font-size: 16px;
 }
 .description {
-  width: 50%;
   text-align: justify;
 }
 .title {
@@ -34,7 +38,29 @@ p {
   position: relative;
 }
 
+.block-content {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  &__left, &__right {
+    width: 30vw;
+  }
+  &__middle {
+    padding-top: 8%;
+  }
+}
+
+.chapter-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .underwear {
   background: url('../src/images/bg-sous-vetements.png') no-repeat fixed center;
   background-size: cover;
+}
+
+main.wrapper {
+  flex:1;
 }
