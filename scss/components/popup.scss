@@ -60,7 +60,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 2;
+        z-index: 3;
 }
 
     .popup-content {
@@ -129,3 +129,12 @@
     font-family: "Abel";
     color: white;
   }
+
+    /* CREDITS */
+    #popup-accessibility {
+    display: none;
+    }
+    #popup-content-accessibility {
+      margin-bottom: 10vh;
+    }
+  
