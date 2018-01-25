@@ -1,0 +1,29 @@
+extends ../layout/layout-2.pug
+
+block title
+  title DECODE - Le sous vêtement
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/underwear.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'underwear'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title le sous vêtement
+    .block-content.flex  
+      .block-content__left
+        p.description L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge... Le sous-vêtement subit d'énormes transformations au fil des années.
+      .block-content__middle
+        img.picto-helm(src="src/images/picto-helm.svg" alt="")
+      .block-content__right
+    
+append scripts
+  //-additional scripts

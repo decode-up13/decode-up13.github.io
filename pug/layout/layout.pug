@@ -6,13 +6,12 @@ html(lang="fr")
 
   block vars
     - var bodyClass = 'defaultClass'
-    - var withHeader = 'false'
+    - var withHeader = 'true'
 
 
   body(class=bodyClass)
-    if withHeader == 'true'
-      include ../includes/header.pug
+
     main.wrapper
       block content
 
-    include ../includes/footer.pug
+  block scripts

@@ -1,0 +1,70 @@
+//base
+@import './base/fonts';
+@import './base/color';
+
+// components
+@import './components/menu';
+@import './components/popup';
+
+body {
+  margin: 0;
+}
+
+button {
+  outline: none;
+}
+
+h1, h2, ul, p {
+  color: $blanc;
+}
+h1 {
+  font-family: $Francois-One;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+h2 {
+  font-family: $Source-Sans-Pro-Bold;
+  font-size: 24px;
+}
+p {
+  font-family: $Source-Sans-Pro-Regular;
+  font-size: 16px;
+}
+.description {
+  text-align: justify;
+}
+.title {
+  margin-bottom: 0;
+}
+
+.top-navigation {
+  position: relative;
+}
+
+.block-content {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  &__left, &__right {
+    width: 30vw;
+  }
+  &__middle {
+    padding-top: 25vh;
+  }
+}
+
+.chapter-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.underwear {
+  background: url('../src/images/bg-sous-vetements.png') no-repeat fixed center;
+  background-size: cover;
+}
+
+main.wrapper {
+  flex:1;
+}

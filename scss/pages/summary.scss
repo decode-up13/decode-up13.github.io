@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #summary-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .summary-item {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 16.8vw;
+  }
+  
+  .overlay-item {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 16.8vw;
+    opacity: 0;
+  }
+  
+  .summary-item {
+    background-size: cover;
+  }
+  
+  .overlay-item:hover {
+    opacity: 0.65;
+  }
+  
+  .summary-title {
+    float: right;
+    font-family: 'Francois One';
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    margin-top: 2vh;
+    padding: 0;
+    font-size: 7vh;
+    -ms-writing-mode: tb-lr;
+    -webkit-writing-mode: vertical-lr;
+    -moz-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  
+  /* Colors on hover */
+  
+  #overlay-item-lingerie {
+    background-color: #e8dcd6;
+  }
+  
+  #overlay-item-bikini {
+    background-color: #716943;
+  }
+  
+  #overlay-item-pantalon {
+    background-color: #000000;
+  }
+  
+  #overlay-item-mini-jupe {
+    background-color: #ce8427;
+  }
+  
+  #overlay-item-destroy {
+    background-color: #c5d92c;
+  }
+  
+  #overlay-item-jupe-homme {
+    background-color: #46424d;
+  }
+  
+  /* Background images*/
+  
+  #summary-item-lingerie {
+    background-image: url('../../src/images/summary/summary-sous-vetement.png');
+  }
+  
+  #summary-item-bikini {
+    background-image: url('../../src/images/summary/summary-bikini.png');
+  }
+  
+  #summary-item-pantalon {
+    background-image: url('../../src/images/summary/summary-pantalon.png');
+  }
+  
+  #summary-item-mini-jupe {
+    background-image: url('../../src/images/summary/summary-mini-jupe.png');
+  }
+  
+  #summary-item-destroy {
+    background-image: url('../../src/images/summary/summary-destroy.png');
+  }
+  
+  #summary-item-jupe-homme {
+    background-image: url('../../src/images/summary/summary-jupe-homme.png');
+  }

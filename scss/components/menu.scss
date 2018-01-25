@@ -1,0 +1,244 @@
+.top-navigation {
+  z-index: 2;
+}
+
+//
+// Horizontal menu
+//
+.menu-list {
+  padding-left: 0;
+}
+.menu-element {
+  position: relative;
+  display: inline-block;
+  font-family: $Abel;
+  font-size: 16px;
+  color: $blanc;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 20px;
+  width: 74px;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 74px;
+    height: 0;
+    background: $noir;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $noir;
+    font-weight: bold;
+    &::after {
+      height: 4px;
+      transition: height 0.3s;
+    }
+  }
+}
+
+//
+// footer
+//
+
+.menu-credits {
+  li {
+    width: 100px;
+    margin: 0;
+    &:last-child {
+      width: 30px;
+      &:hover:after {
+        width: 25px;
+        margin-left: 3px;
+      }
+    }
+    &:first-child {
+      width: 100px;
+      &:hover:after {
+        width: 100px;
+        margin-left: 0px;
+      }
+    }
+    &:hover:after {
+      width: 70px;
+      margin-left: 15px;
+
+    
+    }
+  }
+}
+
+footer.wrapper {
+  width: 100vw; 
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer-element {
+  width: 15vw;
+  text-align: center;
+  &:first-child {
+    width: 42.5vw;
+    text-align: left;
+  }
+  &:last-child {
+    width: 42.5vw;
+    text-align: right;
+  }
+}
+
+
+.logo-link {
+  position: relative;
+  &:hover {
+    #logo-img-white {
+      display: none;
+    }
+    #logo-img {
+      display: block;
+    }
+  }
+}
+#logo-img-white, #logo-img {
+  position: absolute;
+  height: 60px;
+  cursor: pointer;
+}
+#logo-img {
+  display: none;
+}
+
+//
+// burger menu
+//
+.burger-menu {
+  position: absolute;
+  top: 1.1vw;
+  right: 0;
+  background: 0;
+  height: 25px;
+  width: 30px;
+  z-index: 1;
+  outline: 0;
+  padding: 0;
+  border: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bar {
+  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+  position: absolute;
+  background: white;
+  margin: auto;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  top: 10px;
+  &::before, &::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+    position: absolute;
+    background: white;
+    margin: auto;
+    width: 100%;
+    height: 5px;
+    content: '';
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  &::before {
+    top: -10px;
+  }
+  &::after {
+    top: 10px;
+  }
+}
+
+.active .bar {
+  background: 0;
+  &::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  &::before, &::after {
+    top: 0;
+  }
+  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+  &::before, &::after {
+    -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+  }
+}
+
+//
+// Menu content
+//
+nav.menu-left {
+	// visibility: hidden;
+  position: fixed;
+  top:0;
+	right: -25vw;
+	width : 25vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	background: #ce8427;
+	color: white;
+  text-align: center;
+  transition: right 0.5s;
+	font-family: $Abel;
+  font-size: 18px;
+  &.active {
+    // visibility: visible;
+    right: 0;
+  }
+}
+
+.menu-content {
+  height: 80vh;
+  .menu-left-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    padding-left: 0;
+    li {
+      line-height: 10vh;
+    }
+  }
+}
+
+.menu-title-top {
+	margin: 0;
+	padding-top : 50px;
+	padding-bottom: 30px;
+	border-bottom: 0.5px solid white;
+}
+
+a {
+  color: white;
+}
