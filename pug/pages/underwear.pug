@@ -1,4 +1,4 @@
-extends ../layout/layout.pug
+extends ../layout/layout-2.pug
 
 block title
   title DECODE - Le sous vêtement
@@ -13,13 +13,17 @@ block vars
   - var withHeader = 'true'
 
 
+
 block content
   //- page content
   .content-wrapper
     h1.title le sous vêtement
-    p.description L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge, monokini, string... Le sous-vêtement subit d'énormes transformations au fil des années. Des sous-vêtements comme la lingerie dentelle vont s'identifier à une figure de l’érotisme.
-    img.picto-helm(src="src/images/picto-helm.svg" alt="")
-
+    .block-content.flex  
+      .block-content__left
+        p.description L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge, monokini, string... Le sous-vêtement subit d'énormes transformations au fil des années. Des sous-vêtements comme la lingerie dentelle vont s'identifier à une figure de l’érotisme.
+      .block-content__middle
+        img.picto-helm(src="src/images/picto-helm.svg" alt="")
+      .block-content__right
     
 append scripts
   //-additional scripts
