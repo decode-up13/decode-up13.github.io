@@ -29,10 +29,12 @@
     content: "";
     width: 74px;
     height: 0;
-    background: $blanc;
+    background: $noir;
   }
   &:hover {
     cursor: pointer;
+    color: $noir;
+    font-weight: bold;
     &::after {
       height: 4px;
       transition: height 0.3s;
@@ -49,7 +51,6 @@
     width: 100px;
     margin: 0;
     &:last-child {
-      margin-right: 2vw;
       width: 30px;
       &:hover:after {
         width: 25px;
@@ -93,11 +94,24 @@ footer.wrapper {
 }
 
 
-
-#footer-img{
+.logo-link {
+  position: relative;
+  &:hover {
+    #logo-img-white {
+      display: none;
+    }
+    #logo-img {
+      display: block;
+    }
+  }
+}
+#logo-img-white, #logo-img {
+  position: absolute;
   height: 60px;
   cursor: pointer;
-  margin-left: 2vw;
+}
+#logo-img {
+  display: none;
 }
 
 //
