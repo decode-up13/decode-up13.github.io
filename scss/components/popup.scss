@@ -1,6 +1,6 @@
 /* CROSS BAR STYLING */
 
-#cross {
+.cross {
     position: fixed;
     top: 0;
     right: 0;
@@ -12,6 +12,7 @@
     outline: 0;
     padding: 0;
     border: 0;
+    cursor: pointer;
   }
   
   .cross-bar {
@@ -53,7 +54,6 @@
 
     .popup {
         background-color: black;
-        opacity: 0.8;
         position: fixed;
         overflow-y: scroll;
         top: 0;
@@ -61,6 +61,13 @@
         width: 100vw;
         height: 100vh;
         z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+        &.active {
+          visibility: visible;
+          opacity: 0.97;
+        }
 }
 
     .popup-content {
@@ -81,10 +88,7 @@
     }
 
   /* ABOUT */
-  #popup-about {
-      display: none;
-  }
-  
+
   #popup-content-about {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -95,18 +99,11 @@
   }
 
   /* CREDITS */
-  #popup-credits {
-    display: none;
-  }
   #popup-content-credits {
     margin-bottom: 10vh;
   }
 
   /* RS */
-  #popup-rs {
-    display: none;
-  }
-  
   a {
     text-decoration: none;
   }
@@ -130,11 +127,8 @@
     color: white;
   }
 
-    /* CREDITS */
-    #popup-accessibility {
-    display: none;
-    }
-    #popup-content-accessibility {
-      margin-bottom: 10vh;
-    }
+  /* ACCESSIBILITY */
+  #popup-content-accessibility {
+    margin-bottom: 10vh;
+  }
   

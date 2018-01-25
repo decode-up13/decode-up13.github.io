@@ -50,7 +50,7 @@ p {
     width: 30vw;
   }
   &__middle {
-    padding-top: 8%;
+    padding-top: 25vh;
   }
 }
 
@@ -59,8 +59,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
 }
 .underwear {
   background: url('../src/images/bg-sous-vetements.png') no-repeat fixed center;

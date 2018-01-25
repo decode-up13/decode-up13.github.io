@@ -1,7 +1,7 @@
 mixin popup (type)
     if type == about
         .popup#popup-about
-            button#cross(type="button")
+            button.cross(type="button")
                 span.cross-bar
             h1.popup-title A PROPOS
             p#popup-content-about.popup-content
@@ -22,7 +22,7 @@ mixin popup (type)
 
     if type == credits
         .popup#popup-credits
-            button#cross(type="button")
+            button.cross(type="button")
                 span.cross-bar
             h1.popup-title CREDITS
             p.popup-content#popup-content-credits
@@ -66,7 +66,7 @@ mixin popup (type)
 
     if type == rs
         .popup#popup-rs
-            button#cross(type="button")
+            button.cross(type="button")
                 span.cross-bar
             h1.popup-title RESEAUX SOCIAUX
             #popup-content-rs.popup-content
@@ -85,7 +85,7 @@ mixin popup (type)
 
     if type == accessibility
         .popup#popup-accessibility
-            button#cross(type="button")
+            button.cross(type="button")
                 span.cross-bar
             h1.popup-title ACCESSIBILITE
             p.popup-content#popup-content-accessibility 
