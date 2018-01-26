@@ -10,6 +10,7 @@
   }
   .picto-element {
     position: absolute;
+    cursor: pointer;
     &__photo {
       top: -55px;
       left: -60px;
@@ -25,8 +26,19 @@
       right: -65px;
       transform: rotate(-50deg);
     }
+    &:hover {
+      .picto {
+        display: none;
+      }
+      .picto-hover {
+        display: block;
+      }
+    }
   }
-  .picto {
+  .picto, .picto-hover {
     width: 60px;
+  }
+  .picto-hover {
+    display: none;
   }
 }
