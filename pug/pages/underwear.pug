@@ -22,7 +22,14 @@ block content
       .block-content__left
         p.description L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge... Le sous-vêtement subit d'énormes transformations au fil des années.
       .block-content__middle
-        img.picto-helm(src="src/images/picto-helm.svg" alt="")
+        .picto-container
+          img.picto-helm(src="src/images/picto-helm.svg" alt="")
+          .picto-element.picto-element__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+          .picto-element.picto-element__paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+          .picto-element.picto-element__camera
+            img.picto.picto-camera(src="src/images/picto-camera-dashed.svg" alt="")
       .block-content__right
     
 append scripts
