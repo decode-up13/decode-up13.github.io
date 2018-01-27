@@ -1,0 +1,54 @@
+.bow {
+  width: 300px;
+  margin:0;
+}
+
+.bikini-picto-video, .bikini-picto-photo, .bikini-picto-paper {
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.bikini-picto-photo {
+  transform: rotate(135deg);
+}
+
+.bikini-picto-paper {
+  transform:rotate(45deg);
+}
+
+.bikini-picto-video {
+  margin-left: 25px;
+  margin-right: 25px;
+  position: relative;
+  top: -150px;
+}
+.bikini-picto.left {
+  transform: rotate (45deg);
+}
+.picto-container-bikini {
+  &:first-child{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  }
+}
+
+.anchor-bikini {
+  display: block;
+  height: 70px;
+  width: 50px;
+  text-align: center;
+  border-right: solid 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw;
+}
+
+.anchor-bikini-img {
+  margin: auto;
+}
+
+.block-content__middle-bikini {
+  padding: 0;
+  padding-top: 60px;
+  margin:0;
+}

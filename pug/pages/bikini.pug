@@ -1,0 +1,39 @@
+extends ../layout/layout-2.pug
+
+block title
+  title DECODE - Le bikini
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/bikini.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'bikini'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title le bikini
+    .block-content.flex  
+      .block-content__left
+        p.description blablablabla
+        .anchor-bikini  
+          img.anchor-bikini-img(src="src/images/bikini/boucle.svg")
+      .block-content__middle.block-content__middle-bikini
+        .picto-container-bikini
+          .picto-container-bikini__left
+            img.bikini-picto-photo(src="src/images/bikini/photo-camera.svg")
+          .picto-container-bikini__middle
+            img.bikini-picto-video(src="src/images/bikini/video-camera.svg")
+          .picto-container-bikini__right
+            img.bikini-picto-paper(src="src/images/bikini/paper.svg")  
+        .picto-container-bikini
+            img.bow(src="src/images/bikini/bow.svg" alt="")
+      .block-content__right
+    
+append scripts
+  //-additional scripts
