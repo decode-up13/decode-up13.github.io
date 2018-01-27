@@ -1,0 +1,76 @@
+.anchor-jh {
+  display: block;
+  height: 62px;
+  width: 70px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw;
+  &:hover {
+    cursor: pointer;
+    border-right: dashed 1.5px black;
+    text-align: center;
+    .anchor-jh-img {
+      display: none;
+    }
+    .anchor-jh-hover {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.anchor-jh-img, .anchor-jh-hover {
+  width: 60px;
+}
+
+.anchor-jh-hover {
+  display: none;
+}
+
+.picto-container {
+  position: relative;
+  .picto-tartan {
+    width: 400px;
+    display: block;
+    margin: -60px auto;
+  }
+  
+  .picto-element-jh {
+    position: absolute;
+    cursor: pointer;
+    &__photo {
+      top: 160px;
+      left: 15px;
+      transform: rotate
+    }
+    &__paper {
+      top: -10px;
+      right: 175px;
+    }
+    &__camera {
+      top: 170px;
+      right: 10px;
+    }
+    &:hover {
+      .picto {
+        display: none;
+      }
+      .picto-hover {
+        display: block;
+      }
+    }
+  }
+  .picto, .picto-hover {
+    width: 60px;
+  }
+  .picto-hover {
+    display: none;
+  }
+}
+
+.picto-element-jh__camera {
+  .picto, .picto-hover {
+    width: 75px;
+  }
+}
