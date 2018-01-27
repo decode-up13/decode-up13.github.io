@@ -1,0 +1,42 @@
+extends ../layout/layout-2.pug
+
+block title
+  title DECODE - Le pantalon
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/pantalon.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'pantalon'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title le pantalon
+    .block-content.flex  
+      .block-content__left
+        p.description Le bikini est présenté la première fois le 5 juillet 1946 à la Piscine Molitor de Paris. Très vite, il est interdit en Espagne, Italie et Belgique puis, condamné par le Vatican.
+        .anchor-bikini  
+          img.anchor-bikini-img(src="src/images/bikini/boucle.svg")
+          img.anchor-bikini-hover(src="src/images/bikini/boucle-hover.png")
+      .block-content__middle    
+        .picto-container
+          img.picto-bow(src="src/images/bikini/bow.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__paper#js-picto-paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__camera
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+      .block-content__right
+    
+append scripts
+  //-additional scripts
