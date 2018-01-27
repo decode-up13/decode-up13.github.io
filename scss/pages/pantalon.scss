@@ -1,54 +1,52 @@
-.anchor-bikini {
+.anchor-pantalon {
   display: block;
-  height: 70px;
+  height: 60px;
   width: 50px;
   text-align: center;
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw;
+  padding-right: 10px;
   &:hover {
     cursor: pointer;
     border-right: dashed 1.5px black;
     text-align: center;
-    .anchor-bikini-img {
+    .anchor-pantalon-img {
       display: none;
     }
-    .anchor-bikini-hover {
+    .anchor-pantalon-hover {
       display: block;
       margin: auto;
     }
   }
 }
 
-.anchor-bikini-hover {
+.anchor-pantalon-hover {
   display: none;
 }
 
 .picto-container {
   position: relative;
-  .picto-bow {
-    width: 231px;
+  .picto-trace {
+    width: 500px;
     display: block;
-    margin: 0 auto;
+    margin: 80px auto;
   }
   
-  .picto-element-bikini {
+  .picto-element-pantalon {
     position: absolute;
     cursor: pointer;
     &__photo {
-      top: -50px;
-      left: -70px;
-      transform: rotate(125deg);
+      top: 50px;
+      left: 45px;
     }
     &__paper {
-      top: -50px;
-      right: -75px;
-      transform: rotate(-125deg);
+      top: 50px;
+      right: 50px;
     }
     &__camera {
-      bottom: 200px;
-      right: 90px;
-      transform: rotate(-180deg);
+      top: 50px;
+      right: 190px;
     }
     &:hover {
       .picto {
@@ -67,7 +65,7 @@
   }
 }
 
-.picto-element-bikini__camera {
+.picto-element-pantalon__camera {
   .picto, .picto-hover {
     width: 75px;
   }

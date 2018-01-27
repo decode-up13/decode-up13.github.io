@@ -1,59 +1,51 @@
-.anchor-bikini {
+.anchor-pantalon {
   display: block;
-  height: 70px;
+  height: 60px;
   width: 50px;
   text-align: center;
   border-right: dashed 1.5px white;
   margin-left: 8vw;
-  margin-top: 6vw; }
-  .anchor-bikini:hover {
+  margin-top: 6vw;
+  padding-right: 10px; }
+  .anchor-pantalon:hover {
     cursor: pointer;
     border-right: dashed 1.5px black;
     text-align: center; }
-    .anchor-bikini:hover .anchor-bikini-img {
+    .anchor-pantalon:hover .anchor-pantalon-img {
       display: none; }
-    .anchor-bikini:hover .anchor-bikini-hover {
+    .anchor-pantalon:hover .anchor-pantalon-hover {
       display: block;
       margin: auto; }
 
-.anchor-bikini-hover {
+.anchor-pantalon-hover {
   display: none; }
 
 .picto-container {
   position: relative; }
-  .picto-container .picto-bow {
-    width: 231px;
+  .picto-container .picto-trace {
+    width: 500px;
     display: block;
-    margin: 0 auto; }
-  .picto-container .picto-element-bikini {
+    margin: 80px auto; }
+  .picto-container .picto-element-pantalon {
     position: absolute;
     cursor: pointer; }
-    .picto-container .picto-element-bikini__photo {
-      top: -50px;
-      left: -70px;
-      -webkit-transform: rotate(125deg);
-      -ms-transform: rotate(125deg);
-      transform: rotate(125deg); }
-    .picto-container .picto-element-bikini__paper {
-      top: -50px;
-      right: -75px;
-      -webkit-transform: rotate(-125deg);
-      -ms-transform: rotate(-125deg);
-      transform: rotate(-125deg); }
-    .picto-container .picto-element-bikini__camera {
-      bottom: 200px;
-      right: 90px;
-      -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-      transform: rotate(-180deg); }
-    .picto-container .picto-element-bikini:hover .picto {
+    .picto-container .picto-element-pantalon__photo {
+      top: 50px;
+      left: 45px; }
+    .picto-container .picto-element-pantalon__paper {
+      top: 50px;
+      right: 50px; }
+    .picto-container .picto-element-pantalon__camera {
+      top: 50px;
+      right: 190px; }
+    .picto-container .picto-element-pantalon:hover .picto {
       display: none; }
-    .picto-container .picto-element-bikini:hover .picto-hover {
+    .picto-container .picto-element-pantalon:hover .picto-hover {
       display: block; }
   .picto-container .picto, .picto-container .picto-hover {
     width: 60px; }
   .picto-container .picto-hover {
     display: none; }
 
-.picto-element-bikini__camera .picto, .picto-element-bikini__camera .picto-hover {
+.picto-element-pantalon__camera .picto, .picto-element-pantalon__camera .picto-hover {
   width: 75px; }
