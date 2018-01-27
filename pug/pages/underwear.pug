@@ -1,5 +1,7 @@
 extends ../layout/layout-2.pug
 
+include ../components/popup.pug
+
 block title
   title DECODE - Le sous vêtement
 
@@ -22,8 +24,23 @@ block content
       .block-content__left
         p.description L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge... Le sous-vêtement subit d'énormes transformations au fil des années.
       .block-content__middle
-        img.picto-helm(src="src/images/picto-helm.svg" alt="")
+        .picto-container
+          img.picto-helm(src="src/images/picto-helm.svg" alt="")
+          .picto-element.picto-element__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+          .picto-element.picto-element__paper#js-picto-paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+          .picto-element.picto-element__camera
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
       .block-content__right
+  +popup("paper")
+    h3.title petite histoire des sous-vêtements
+    p.text A ses débuts, les sous-vêtements protégeaient l’homme contre la friction et la gêne provoquée par des costumes et contre les rigueurs du climat. Maintenant ils sont devenus des tenues très stylées avec leur fonction érotique.  
+    p.text Visibles ou invisibles, ils trouvent toute leur splendide  voire leur élégance dans le confort  offrant aux femmes et hommes une allure plus audacieuse dans l’habillement. Body, Boxer, Caleçon long, Chaussette, Collants, Débardeur, Maillot de corps, Maillot à manches longues, Shorty, Slip, String, Tanga, Soutien-gorge restent des éléments de la variété de ce type de vêtement très connu.
+
     
 append scripts
   //-additional scripts

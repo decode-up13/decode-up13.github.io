@@ -1,0 +1,48 @@
+extends ../layout/layout-2.pug
+
+include ../components/popup.pug
+
+block title
+  title DECODE - La mini-jupe
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/mini-jupe.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'mini-jupe'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title la mini-jupe
+    .block-content.flex  
+      .block-content__left
+        p.description Début du 20ème siècle, la jupe se raccourcit. Dans les années 60, en Angleterre apparaît la mini-jupe. C'est Marie Quant, styliste anglaise qui la propulse. 
+        .anchor-mini-jupe  
+          img.anchor-mj-img(src="src/images/mini-jupe/oval.svg")
+          img.anchor-mj-hover(src="src/images/mini-jupe/oval-hover.png")
+      .block-content__middle    
+        .picto-container
+          img.picto-broderie(src="src/images/mini-jupe/broderie.svg" alt="")
+          .picto-element-mj.picto-element-mj__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+          .picto-element-mj.picto-element-mj__paper#js-picto-paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+          .picto-element-mj.picto-element-mj__camera
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+      .block-content__right
+  +popup("paper")
+    h3.title petite histoire de la mini-jupe
+    p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
+    p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toute les morphologies grâce à ses différentes coupes. 
+
+append scripts
+  //-additional scripts

@@ -1,0 +1,72 @@
+.anchor-pantalon {
+  display: block;
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw;
+  padding-right: 10px;
+  &:hover {
+    cursor: pointer;
+    border-right: dashed 1.5px black;
+    text-align: center;
+    .anchor-pantalon-img {
+      display: none;
+    }
+    .anchor-pantalon-hover {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.anchor-pantalon-hover {
+  display: none;
+}
+
+.picto-container {
+  position: relative;
+  .picto-trace {
+    width: 500px;
+    display: block;
+    margin: 80px auto;
+  }
+  
+  .picto-element-pantalon {
+    position: absolute;
+    cursor: pointer;
+    &__photo {
+      top: 50px;
+      left: 45px;
+    }
+    &__paper {
+      top: 50px;
+      right: 50px;
+    }
+    &__camera {
+      top: 50px;
+      right: 190px;
+    }
+    &:hover {
+      .picto {
+        display: none;
+      }
+      .picto-hover {
+        display: block;
+      }
+    }
+  }
+  .picto, .picto-hover {
+    width: 60px;
+  }
+  .picto-hover {
+    display: none;
+  }
+}
+
+.picto-element-pantalon__camera {
+  .picto, .picto-hover {
+    width: 75px;
+  }
+}

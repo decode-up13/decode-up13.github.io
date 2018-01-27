@@ -1,6 +1,7 @@
 // For closing all popup
 $('.cross').on('click', function() {
   $(this).parent().removeClass('active');
+  $(this).parent().removeClass('opened');
 });
 
 
@@ -15,4 +16,8 @@ $('#js-popup-credit').on('click', function() {
 });
 $('#js-popup-rs').on('click', function() {
   $('#popup-rs').addClass('active');
+});
+
+$('#js-picto-paper').on('click', function() {
+  $('#popup-paper').addClass('opened');
 });

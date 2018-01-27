@@ -1,0 +1,56 @@
+.anchor-jh {
+  display: block;
+  height: 62px;
+  width: 70px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw; }
+  .anchor-jh:hover {
+    cursor: pointer;
+    border-right: dashed 1.5px black;
+    text-align: center; }
+    .anchor-jh:hover .anchor-jh-img {
+      display: none; }
+    .anchor-jh:hover .anchor-jh-hover {
+      display: block;
+      margin: auto; }
+
+.anchor-jh-img, .anchor-jh-hover {
+  width: 60px; }
+
+.anchor-jh-hover {
+  display: none; }
+
+.picto-container {
+  position: relative; }
+  .picto-container .picto-tartan {
+    width: 400px;
+    display: block;
+    margin: -60px auto; }
+  .picto-container .picto-element-jh {
+    position: absolute;
+    cursor: pointer; }
+    .picto-container .picto-element-jh__photo {
+      top: 160px;
+      left: 15px;
+      -webkit-transform: rotate;
+      -ms-transform: rotate;
+      transform: rotate; }
+    .picto-container .picto-element-jh__paper {
+      top: -10px;
+      right: 175px; }
+    .picto-container .picto-element-jh__camera {
+      top: 170px;
+      right: 10px; }
+    .picto-container .picto-element-jh:hover .picto {
+      display: none; }
+    .picto-container .picto-element-jh:hover .picto-hover {
+      display: block; }
+  .picto-container .picto, .picto-container .picto-hover {
+    width: 60px; }
+  .picto-container .picto-hover {
+    display: none; }
+
+.picto-element-jh__camera .picto, .picto-element-jh__camera .picto-hover {
+  width: 75px; }

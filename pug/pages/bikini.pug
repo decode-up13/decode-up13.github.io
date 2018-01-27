@@ -1,0 +1,49 @@
+extends ../layout/layout-2.pug
+
+include ../components/popup.pug
+
+block title
+  title DECODE - Le bikini
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/bikini.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'bikini'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title le bikini
+    .block-content.flex  
+      .block-content__left
+        p.description Le bikini est présenté la première fois le 5 juillet 1946 à la Piscine Molitor de Paris. Très vite, il est interdit en Espagne, Italie et Belgique puis, condamné par le Vatican.
+        .anchor-bikini  
+          img.anchor-bikini-img(src="src/images/bikini/boucle.svg")
+          img.anchor-bikini-hover(src="src/images/bikini/boucle-hover.png")
+      .block-content__middle    
+        .picto-container
+          img.picto-bow(src="src/images/bikini/bow.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__paper#js-picto-paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+          .picto-element-bikini.picto-element-bikini__camera
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+      .block-content__right
+  +popup("paper")
+    h3.title petite histoire du bikini
+    p.text Un mot sexy. Un mot court.  Le bikini est d’origine française. C’est l’ingénieur automobile Louis Réard qui, en juin 1946 crée le maillot avec moins d’1m² de tissus. Il se compose uniquement d’un bandeau pour la poitrine et deux triangles pour le bas. Le nombril est dévoilé pour la première fois !  
+    p.text La danseuse de cabaret Micheline Bernardini présente le bikini à la Piscine Molitor le 5 juillet 1946. Aucun mannequin n’ose à l’époque. En 1932, le couturier parisien Jacques Heim tenta de démocratiser un maillot de bain deux-pièces du nom “d’atome”.
+    p.text Le bikini est finalement accepté en 1956 avec la libération des moeurs. L’icône du cinéma américain, Marilyn Monroe défraie la chronique en 1953 en s’affichant avec un bikini
+
+append scripts
+  //-additional scripts

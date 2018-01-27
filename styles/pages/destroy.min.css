@@ -1,0 +1,56 @@
+.anchor-destroy {
+  display: block;
+  height: 62px;
+  width: 50px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw; }
+  .anchor-destroy:hover {
+    cursor: pointer;
+    border-right: dashed 1.5px black;
+    text-align: center; }
+    .anchor-destroy:hover .anchor-destroy-img {
+      display: none; }
+    .anchor-destroy:hover .anchor-destroy-hover {
+      display: block;
+      margin: auto; }
+
+.anchor-destroy-img, .anchor-destroy-hover {
+  width: 60px; }
+
+.anchor-destroy-hover {
+  display: none; }
+
+.picto-container {
+  position: relative; }
+  .picto-container .picto-pin {
+    width: 300px;
+    display: block;
+    margin: -110px auto;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .picto-container .picto-element-destroy {
+    position: absolute;
+    cursor: pointer; }
+    .picto-container .picto-element-destroy__photo {
+      top: 190px;
+      left: -40px; }
+    .picto-container .picto-element-destroy__paper {
+      top: 230px;
+      right: -15px; }
+    .picto-container .picto-element-destroy__camera {
+      top: 210px;
+      right: 120px; }
+    .picto-container .picto-element-destroy:hover .picto {
+      display: none; }
+    .picto-container .picto-element-destroy:hover .picto-hover {
+      display: block; }
+  .picto-container .picto, .picto-container .picto-hover {
+    width: 60px; }
+  .picto-container .picto-hover {
+    display: none; }
+
+.picto-element-destroy__camera .picto, .picto-element-destroy__camera .picto-hover {
+  width: 75px; }

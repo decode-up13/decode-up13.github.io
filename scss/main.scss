@@ -5,6 +5,8 @@
 // components
 @import './components/menu';
 @import './components/popup';
+@import './components/paper';
+
 
 body {
   margin: 0;
@@ -50,7 +52,7 @@ p {
     width: 30vw;
   }
   &__middle {
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 }
 
@@ -65,6 +67,30 @@ p {
   background-size: cover;
 }
 
+.bikini {
+  background: url('../src/images/bg-bikini.png') no-repeat fixed center;
+  background-size: cover;
+}
+
+.pantalon {
+  background: url('../src/images/bg-pantalon.png') no-repeat fixed center;
+  background-size: cover;
+}
+
+.mini-jupe {
+  background: url('../src/images/bg-mini-jupe.png') no-repeat fixed center;
+  background-size: cover;
+}
+
+.destroy {
+  background: url('../src/images/bg-destroy.png') no-repeat fixed center;
+  background-size: cover;  
+}
+
+.jupe-homme {
+  background: url('../src/images/bg-jupe-homme.png') no-repeat fixed center;
+  background-size: cover; 
+}
 main.wrapper {
   flex:1;
 }
