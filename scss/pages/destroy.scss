@@ -1,0 +1,76 @@
+.anchor-destroy {
+  display: block;
+  height: 62px;
+  width: 50px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw;
+  &:hover {
+    cursor: pointer;
+    border-right: dashed 1.5px black;
+    text-align: center;
+    .anchor-destroy-img {
+      display: none;
+    }
+    .anchor-destroy-hover {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.anchor-destroy-img, .anchor-destroy-hover {
+  width: 60px;
+}
+
+.anchor-destroy-hover {
+  display: none;
+}
+
+.picto-container {
+  position: relative;
+  .picto-pin {
+    width: 300px;
+    display: block;
+    margin: -110px auto;
+    transform: rotate(45deg);
+  }
+  
+  .picto-element-destroy {
+    position: absolute;
+    cursor: pointer;
+    &__photo {
+      top: 190px;
+      left: -40px;
+    }
+    &__paper {
+      top: 230px;
+      right: -15px;
+    }
+    &__camera {
+      top: 210px;
+      right: 120px;
+    }
+    &:hover {
+      .picto {
+        display: none;
+      }
+      .picto-hover {
+        display: block;
+      }
+    }
+  }
+  .picto, .picto-hover {
+    width: 60px;
+  }
+  .picto-hover {
+    display: none;
+  }
+}
+
+.picto-element-destroy__camera {
+  .picto, .picto-hover {
+    width: 75px;
+  }
+}

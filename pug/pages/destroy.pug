@@ -1,0 +1,42 @@
+extends ../layout/layout-2.pug
+
+block title
+  title DECODE - Les pièces destroy
+
+append styles
+  //- additional styles
+  link(href="./styles/pages/destroy.min.css", rel="stylesheet")
+
+block vars
+  //- variables
+  - var bodyClass = 'destroy'
+  - var withHeader = 'true'
+
+
+
+block content
+  //- page content
+  .content-wrapper
+    h1.title les pièces destroy
+    .block-content.flex  
+      .block-content__left
+        p.description Au cours des années 50, ces vêtements ont connu une envergure internationale en tant que signes de rébellion pour exprimer des idées contestataires dans l’ordre social.  
+        .anchor-destroy 
+          img.anchor-destroy-img(src="src/images/destroy/pin.svg")
+          img.anchor-destroy-hover(src="src/images/destroy/pin-hover.png")
+      .block-content__middle    
+        .picto-container
+          img.picto-pin(src="src/images/destroy/safety-pin.svg" alt="")
+          .picto-element-destroy.picto-element-destroy__photo
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+          .picto-element-destroy.picto-element-destroy__paper#js-picto-paper
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+          .picto-element-destroy.picto-element-destroy__camera
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+      .block-content__right
+    
+append scripts
+  //-additional scripts

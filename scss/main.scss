@@ -82,6 +82,10 @@ p {
   background-size: cover;
 }
 
+.destroy {
+  background: url('../src/images/bg-destroy.png') no-repeat fixed center;
+  background-size: cover;  
+}
 main.wrapper {
   flex:1;
 }
