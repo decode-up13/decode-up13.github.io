@@ -29,7 +29,7 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-pin(src="src/images/destroy/safety-pin.svg" alt="")
-          .picto-element-destroy.picto-element-destroy__photo
+          .picto-element-destroy.picto-element-destroy__photo#js-picto-photo
             img.picto(src="src/images/picto-photo-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
           .picto-element-destroy.picto-element-destroy__paper#js-picto-paper
@@ -43,6 +43,16 @@ block content
     h3.title le mouvenemnt punk et le destroy
     p.text Contester l’ordre politique et social a été l’objectif principal des créateurs des pièces destroys. De nos jours, ce vêtement connait une nouvelle envergure : des pièces fortes qui habilleront nos tenues avec leurs coupes délavées, slim et zippées aux chevilles.  
     p.text Les pièces destroys conviennent parfaitement au goût vestimentaire de cette nouvelle génération. Les déchirures et trous se font manuellement.  
-    
+  +popup("photo") 
+    #slideshow  
+      .slide.visible
+        img.popup-img(src="src/images/destroy/popup-destroy-1.jpg")
+        .popup-caption 
+          p Les Sex Pistols, groupe punk anglais
+      .slide.hidden
+        img.popup-img(src="src/images/destroy/popup-destroy-2.jpg")
+        .popup-caption 
+          p La mode punk dans les années 1980
+      
 append scripts
   //-additional scripts

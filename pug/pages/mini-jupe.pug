@@ -29,7 +29,7 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-broderie(src="src/images/mini-jupe/broderie.svg" alt="")
-          .picto-element-mj.picto-element-mj__photo
+          .picto-element-mj.picto-element-mj__photo#js-picto-photo
             img.picto(src="src/images/picto-photo-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
           .picto-element-mj.picto-element-mj__paper#js-picto-paper
@@ -43,6 +43,12 @@ block content
     h3.title petite histoire de la mini-jupe
     p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
     p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toute les morphologies grâce à ses différentes coupes. 
-
+  +popup("photo") 
+    #slideshow  
+      .slide.visible
+        img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg")
+        .popup-caption 
+          p 6 juin 2015 : la journée de la mini-jupe à Tunis
+  
 append scripts
   //-additional scripts

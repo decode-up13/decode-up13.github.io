@@ -35,7 +35,7 @@ block content
           .picto-element-bikini.picto-element-bikini__paper#js-picto-paper
             img.picto(src="src/images/picto-paper-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
-          .picto-element-bikini.picto-element-bikini__camera
+          .picto-element-bikini.picto-element-bikini__camera#js-picto-video
             img.picto(src="src/images/picto-camera-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
       .block-content__right
@@ -62,5 +62,13 @@ block content
         img.popup-img(src="src/images/bikini/popup-bikini-5.jpg")
         .popup-caption 
           p L'atoll de Bikini, îles Marshall.
+  +popup("video") 
+    #slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/KXCcJ_DnJbM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/7VEJqRCQMH8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 append scripts
   //-additional scripts

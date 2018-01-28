@@ -29,7 +29,7 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-tartan(src="src/images/jupe-homme/tartan.svg" alt="")
-          .picto-element-jh.picto-element-jh__photo
+          .picto-element-jh.picto-element-jh__photo#js-picto-photo
             img.picto(src="src/images/jupe-homme/photo-camera.svg" alt="")
             img.picto-hover(src="src/images/jupe-homme/photo-camera-hover.png" alt="")
           .picto-element-jh.picto-element-jh__paper#js-picto-paper
@@ -43,6 +43,16 @@ block content
     h3.title La jupe... au masculin ?
     p.text Sur leur lieu de travail, dans la rue, dans les centres commerciaux… une femme en pantalon passe inaperçue.  Pourtant, nous ne pouvons en dire autant pour un homme en jupe.   
     p.text La jupe a toujours été considérée comme un vêtement dédié aux femmes. Encore aujourd’hui, voir un homme en jupe choque, même si des marques de vêtements comme Zara commercialisent des jupes pour homme. 
-    
+  +popup("photo") 
+    #slideshow  
+      .slide.visible
+        img.popup-img(src="src/images/jupe-homme/popup-jupe-homme-1.jpg")
+        .popup-caption 
+          p La jupe pour homme, par Anders Landinger
+      .slide.hidden
+        img.popup-img(src="src/images/jupe-homme/popup-jupe-homme-2.jpg")
+        .popup-caption 
+          p La jupe pour homme commercialisée par Zara en 2014
+   
 append scripts
   //-additional scripts
