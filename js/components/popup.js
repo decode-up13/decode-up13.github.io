@@ -21,3 +21,58 @@ $('#js-popup-rs').on('click', function() {
 $('#js-picto-paper').on('click', function() {
   $('#popup-paper').addClass('opened');
 });
+
+$('#js-picto-photo').on('click', function() {
+  $('#popup-photo').addClass('opened');
+});
+
+
+// SLIDESHOW PHOTO
+
+            var long = $(".slide").length;
+            var compt = 1;
+            var current = null;
+            var next = null;
+            var prev = null;
+ 
+            $("#right-arrow").click(function() {
+
+                if (compt < long) {
+ 
+                    current = $(".slide.visible");
+ 
+                    prev = current;
+ 
+                    next = $(current).next();
+ 
+                    $(current).addClass("hidden").removeClass("visible");
+ 
+                    $(next).addClass("visible").removeClass("hidden");
+ 
+                    //debug
+                    console.log((prev[0] != null) + ', ' + (current[0] != null) + ', ' + (next[0] != null));
+ 
+                    compt++;
+                }
+            });
+ 
+            $("#left-arrow").click(function() {
+ 
+                if ((compt > 1) && (next != null) && (current != null) && (prev != null)) {
+ 
+                    $(next).addClass("hidden").removeClass("visible");
+ 
+                    $(prev).addClass("visible").removeClass("hidden");
+ 
+                    next = current;
+ 
+                    current = prev;    
+ 
+                    prev = $(current).prev();
+ 
+                    //debug
+                    console.log((prev[0] != null) + ', ' + (current[0] != null) + ', ' + (next[0] != null));
+ 
+                    compt--;
+                }
+            });
