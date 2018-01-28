@@ -1,28 +1,28 @@
 header.top-navigation
-	ul.menu-list
-		li.menu-element français
-		li.menu-element english
-		li.menu-element español
-		li.menu-element العربي
-		li.menu-element 日本の
+	ul.menu-list.menu-lang
+		li.menu-element.btn-lang(data-lang="fr") français
+		li.menu-element.btn-lang(data-lang="en") english
+		li.menu-element.btn-lang(data-lang="es") español
+		li.menu-element.btn-lang(data-lang="ar") العربي
+		li.menu-element.btn-lang(data-lang="ja") 日本の
 
 	button(class="burger-menu" type="button")
 		span.bar
 	nav(class="menu-left" id="menu-navigation")
 		.menu-title-top 
-			a(href="../../summary.html") CHAPITRES
+			a.toTranslate(href="../../summary.html" data-translationid="chapter-label" data-translationtype="html") CHAPITRES
 		.menu-content
 			ul.menu-left-list
 				li 
-					a(href='../../underwear.html') LE SOUS VETEMENT
+					a.toTranslate(href='../../underwear.html' data-translationid="chapter1_title" data-translationtype="html") LE SOUS VETEMENT
 				li 
-					a(href='../../bikini.html') LE BIKINI
+					a.toTranslate(href='../../bikini.html' data-translationid="chapter2_title" data-translationtype="html") LE BIKINI
 				li 
-					a(href='../../pantalon.html') LE PANTALON
+					a.toTranslate(href='../../pantalon.html' data-translationid="chapter3_title" data-translationtype="html") LE PANTALON
 				li 
-					a(href='../../mini-jupe.html') LA MINI JUPE
+					a.toTranslate(href='../../mini-jupe.html' data-translationid="chapter4_title" data-translationtype="html") LA MINI JUPE
 				li 
-					a(href='../../destroy.html') LES PIECES DESTROY
+					a.toTranslate(href='../../destroy.html' data-translationid="chapter5_title" data-translationtype="html") LES PIECES DESTROY
 				li 
-					a(href='../../jupe-homme.html') LA JUPE POUR HOMME
+					a.toTranslate(href='../../jupe-homme.html' data-translationid="chapter6_title" data-translationtype="html") LA JUPE POUR HOMME
 		
