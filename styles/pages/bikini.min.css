@@ -48,3 +48,27 @@
 
 .picto-element-bikini__camera .picto, .picto-element-bikini__camera .picto-hover {
   width: 75px; }
+
+@media screen and (max-width: 960px) {
+  .anchor-bikini {
+    display: none; }
+  .picto-container .picto-element {
+    position: absolute; }
+    .picto-container .picto-element__photo {
+      top: -50px;
+      right: 230px;
+      -webkit-transform: rotate(130deg);
+      -ms-transform: rotate(130deg);
+      transform: rotate(130deg); }
+    .picto-container .picto-element__paper {
+      top: -70px;
+      left: 180px;
+      -webkit-transform: rotate(-130deg);
+      -ms-transform: rotate(-130deg);
+      transform: rotate(-130deg); }
+    .picto-container .picto-element__camera {
+      bottom: -43px;
+      right: -60px;
+      -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+      transform: rotate(-50deg); } }

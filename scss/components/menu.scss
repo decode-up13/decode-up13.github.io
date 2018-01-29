@@ -1,5 +1,8 @@
 .top-navigation {
   z-index: 2;
+  .menu-lang {
+    width: 91vw;
+  }
 }
 
 //
@@ -262,17 +265,12 @@ a {
 }
 
 footer.wrapper {
-  width: 95vw;
   .footer-element {
-    background-color: red;
-    .logo-link {
-      width: 10vw;
+    &:last-child {
+      width: 212vw;
     }
     #footer-element-copyright {
       display: none;
-    }
-    ul.menu-list.menu-credits {
-      
     }
   }
 }

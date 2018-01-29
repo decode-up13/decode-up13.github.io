@@ -60,3 +60,33 @@
     width: 75px;
   }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 960px) {
+ 
+  .anchor-bikini {
+    display: none;
+  }
+
+  .picto-container {
+    .picto-element {
+      position: absolute;
+      &__photo {
+        top: -50px;
+        right: 230px;
+        transform: rotate(130deg);
+      }
+      &__paper {
+        top: -70px;
+        left: 180px;
+        transform: rotate(-130deg);
+      }
+      &__camera {
+        bottom: -43px;
+        right: -60px;
+        transform: rotate(-50deg);
+      }
+    }
+  }
+}
