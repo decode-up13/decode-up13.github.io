@@ -3,6 +3,9 @@ html(lang="fr")
 
   include ../includes/head.pug
 
+  block styles
+    link(href="./styles/slick/slick-theme.css", rel="stylesheet")
+    link(href="./styles/slick/slick.css", rel="stylesheet")
 
   block vars
     - var bodyClass = 'defaultClass'
@@ -21,3 +24,4 @@ html(lang="fr")
   block scripts
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
     script(src='/build/main.min.js')
+    script(src='/build/slick/slick.min.js')
