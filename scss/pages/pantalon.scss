@@ -60,3 +60,39 @@
     width: 75px;
   }
 }
+
+// RESPONSIVE
+
+@media screen and (max-width: 960px) {
+  body.pantalon {
+    .anchor-pantalon {
+      display: none;
+    }
+    .picto-container {
+      margin-bottom: 40px;
+      .picto-trace {
+        top: 0;
+        width: 400px;
+      }
+    }
+    .block-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90vw;
+      &__left {
+        width: 80vw;
+        margin-left: -60px;
+      }
+      &__middle {
+        margin-left: -35%;
+        transform: translate(-30%,0);
+      }
+    }
+
+   
+
+  }
+
+}

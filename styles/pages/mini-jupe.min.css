@@ -52,3 +52,10 @@
 
 .picto-element-mj__camera .picto, .picto-element-mj__camera .picto-hover {
   width: 75px; }
+
+@media screen and (max-width: 960px) {
+  .mini-jupe .anchor-mini-jupe {
+    display: none; }
+  .mini-jupe .block-content__middle {
+    padding-top: 27vh;
+    margin-left: 15%; } }

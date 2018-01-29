@@ -64,3 +64,17 @@
     width: 75px;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .jupe-homme {
+    .anchor-jh {
+      display: none;
+    }
+    .block-content__middle {
+      margin-left: 0;
+      padding-top: 7vh;
+      padding-bottom: 4vh;
+    }
+
+  }
+}

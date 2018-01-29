@@ -42,3 +42,35 @@
 
 .picto-element-pantalon__camera .picto, .picto-element-pantalon__camera .picto-hover {
   width: 75px; }
+
+@media screen and (max-width: 960px) {
+  body.pantalon .anchor-pantalon {
+    display: none; }
+  body.pantalon .picto-container {
+    margin-bottom: 40px; }
+    body.pantalon .picto-container .picto-trace {
+      top: 0;
+      width: 400px; }
+  body.pantalon .block-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 90vw; }
+    body.pantalon .block-content__left {
+      width: 80vw;
+      margin-left: -60px; }
+    body.pantalon .block-content__middle {
+      margin-left: -35%;
+      -webkit-transform: translate(-30%, 0);
+      -ms-transform: translate(-30%, 0);
+      transform: translate(-30%, 0); } }

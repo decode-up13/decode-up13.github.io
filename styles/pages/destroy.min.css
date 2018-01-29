@@ -45,3 +45,11 @@
 
 .picto-element-destroy__camera .picto, .picto-element-destroy__camera .picto-hover {
   width: 75px; }
+
+@media screen and (max-width: 960px) {
+  .destroy .anchor-destroy {
+    display: none; }
+  .destroy .block-content__middle {
+    margin-left: 65%;
+    padding-top: 0;
+    padding-bottom: 15vh; } }
