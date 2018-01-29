@@ -6,15 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw; }
-  .anchor-bikini:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center; }
-    .anchor-bikini:hover .anchor-bikini-img {
-      display: none; }
-    .anchor-bikini:hover .anchor-bikini-hover {
-      display: block;
-      margin: auto; }
 
 .anchor-bikini-hover {
   display: none; }
@@ -22,9 +13,9 @@
 .picto-container {
   position: relative; }
   .picto-container .picto-bow {
-    width: 231px;
+    width: 200px;
     display: block;
-    margin: 0 auto; }
+    margin: 50px auto; }
   .picto-container .picto-element-bikini {
     position: absolute;
     cursor: pointer; }
@@ -41,8 +32,8 @@
       -ms-transform: rotate(-125deg);
       transform: rotate(-125deg); }
     .picto-container .picto-element-bikini__camera {
-      bottom: 200px;
-      right: 90px;
+      bottom: 162px;
+      right: 72px;
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }

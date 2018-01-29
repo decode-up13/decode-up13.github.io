@@ -1,5 +1,22 @@
 //base
 @import '../base/color';
+.anchor-jh {
+  display: block;
+  height: 62px;
+  width: 70px;
+  text-align: center;
+  border-right: dashed 1.5px white;
+  margin-left: 8vw;
+  margin-top: 6vw;
+}
+
+.anchor-jh-img, .anchor-jh-hover {
+  width: 60px;
+}
+
+.anchor-jh-hover {
+  display: none;
+}
 
 .picto-container {
   position: relative;
@@ -40,5 +57,35 @@
   }
   .picto-hover {
     display: none;
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 960px) {
+ 
+  .anchor-jh {
+    display: none;
+  }
+
+  .picto-container {
+    .picto-element {
+      position: absolute;
+      &__photo {
+        top: -50px;
+        right: 230px;
+        transform: rotate(130deg);
+      }
+      &__paper {
+        top: -70px;
+        left: 180px;
+        transform: rotate(-130deg);
+      }
+      &__camera {
+        bottom: -43px;
+        right: -60px;
+        transform: rotate(-50deg);
+      }
+    }
   }
 }

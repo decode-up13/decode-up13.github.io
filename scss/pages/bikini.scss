@@ -6,18 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw;
-  &:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center;
-    .anchor-bikini-img {
-      display: none;
-    }
-    .anchor-bikini-hover {
-      display: block;
-      margin: auto;
-    }
-  }
 }
 
 .anchor-bikini-hover {
@@ -27,9 +15,9 @@
 .picto-container {
   position: relative;
   .picto-bow {
-    width: 231px;
+    width: 200px;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
   }
   
   .picto-element-bikini {
@@ -46,8 +34,8 @@
       transform: rotate(-125deg);
     }
     &__camera {
-      bottom: 200px;
-      right: 90px;
+      bottom: 162px;
+      right: 72px;
       transform: rotate(-180deg);
     }
     &:hover {

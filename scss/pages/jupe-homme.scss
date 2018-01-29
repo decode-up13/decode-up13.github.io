@@ -6,18 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw;
-  &:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center;
-    .anchor-jh-img {
-      display: none;
-    }
-    .anchor-jh-hover {
-      display: block;
-      margin: auto;
-    }
-  }
 }
 
 .anchor-jh-img, .anchor-jh-hover {
@@ -31,26 +19,28 @@
 .picto-container {
   position: relative;
   .picto-tartan {
-    width: 400px;
+    width: 300px;
     display: block;
-    margin: -60px auto;
+    margin: 50px auto;
+    position: relative;
+    left: 100px;
   }
   
   .picto-element-jh {
     position: absolute;
     cursor: pointer;
     &__photo {
-      top: 160px;
-      left: 15px;
+      top: 130px;
+      left: 210px;
       transform: rotate
     }
     &__paper {
-      top: -10px;
-      right: 175px;
+      top: -30px;
+      right: 160px;
     }
     &__camera {
-      top: 170px;
-      right: 10px;
+      top: -30px;
+      right: -110px;
     }
     &:hover {
       .picto {

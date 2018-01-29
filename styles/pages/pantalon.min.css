@@ -7,15 +7,6 @@
   margin-left: 8vw;
   margin-top: 6vw;
   padding-right: 10px; }
-  .anchor-pantalon:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center; }
-    .anchor-pantalon:hover .anchor-pantalon-img {
-      display: none; }
-    .anchor-pantalon:hover .anchor-pantalon-hover {
-      display: block;
-      margin: auto; }
 
 .anchor-pantalon-hover {
   display: none; }
@@ -25,19 +16,21 @@
   .picto-container .picto-trace {
     width: 500px;
     display: block;
-    margin: 80px auto; }
+    position: relative;
+    left: 200px;
+    top: 100px; }
   .picto-container .picto-element-pantalon {
     position: absolute;
     cursor: pointer; }
     .picto-container .picto-element-pantalon__photo {
-      top: 50px;
-      left: 45px; }
+      top: 140px;
+      left: 245px; }
     .picto-container .picto-element-pantalon__paper {
-      top: 50px;
-      right: 50px; }
+      top: 150px;
+      right: 10px; }
     .picto-container .picto-element-pantalon__camera {
-      top: 50px;
-      right: 190px; }
+      top: 150px;
+      right: -170px; }
     .picto-container .picto-element-pantalon:hover .picto {
       display: none; }
     .picto-container .picto-element-pantalon:hover .picto-hover {
