@@ -1,84 +1,84 @@
-// .popup-photo {
-//   display: none;
-//   position: absolute;
-//   text-align: center;
-//   height: 70vh;
-//   top: 50%;
-//   left: 50%;
-//   z-index: 1;
-//   transform: translate(-50%, -50%);
-//   .popup-img {
-//     height: 70vh;
-//     }
-//   .popup-caption {
-//     font-family: $Source-Sans-Pro-Bold;
-//     font-size: 1rem;
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-//     background-color:black;
-//     opacity: 0.55;
-//     margin-bottom: 10px;
-//     padding: auto;
-//     p {
-//       width : 80%;
-//       padding: auto;
-//       margin: auto;
-//       font-style: italic;
-//     }
-//   }
-//   .right-arrow {
-//     position: absolute;
-//     height: 65px;
-//     width: 55px;
-//     background-repeat: no-repeat;
-//     right: 0;
-//     top: 50%;
-//     transform: translate(120%, -50%);
-//     background-image: url('../../src/images/right-arrow.png');
-//     background-size: 100%, 100%;
-//     cursor: pointer;
-//     &:hover {
-//       background-image: url('../../src/images/right-arrow-hover.png');
-//     }
-//   }
-//   .left-arrow {
-//     position: absolute;
-//     height: 65px;
-//     width: 55px;
-//     background-repeat: no-repeat;
-//     left: 0;
-//     top: 50%;
-//     transform: translate(-120%, -50%);
-//     background-image: url('../../src/images/left-arrow.png');
-//     background-size: 100%, 100%;
-//     cursor: pointer;
-//     &:hover {
-//       background-image: url('../../src/images/left-arrow-hover.png');
-//     }
-//   }
-//   .cross {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     z-index: 1;
-//     .cross-bar {
-//       &::before, &::after {
-//         background: white;
-//       }
-//     }
-//   }
-// }
+.popup-photo {
+  background: rgba(0,0,0,0.8);
+  display: none;
+  position: absolute;
+  text-align: center;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  .slide-container {
+    width: 75vw;
+  }
+  .slide-element {
+    margin: 0 10px;
+    position: relative;
+  }
+  .popup-img {
+    height: 70vh;
+    width: auto;
+    }
+  .popup-caption {
+    font-family: $Source-Sans-Pro-Bold;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    opacity: 0.55;
+    margin-bottom: 10px;
+    padding: auto;
+    p {
+      width : 80%;
+      padding: auto;
+      margin: auto;
+      font-style: italic;
+    }
+  }
+  .right-arrow {
+    position: absolute;
+    height: 65px;
+    width: 55px;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translate(120%, -50%);
+    background-image: url('../../src/images/right-arrow.png');
+    background-size: 100%, 100%;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../../src/images/right-arrow-hover.png');
+    }
+  }
+  .left-arrow {
+    position: absolute;
+    height: 65px;
+    width: 55px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translate(-120%, -50%);
+    background-image: url('../../src/images/left-arrow.png');
+    background-size: 100%, 100%;
+    cursor: pointer;
+    &:hover {
+      background-image: url('../../src/images/left-arrow-hover.png');
+    }
+  }
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    .cross-bar {
+      &::before, &::after {
+        background: white;
+      }
+    }
+  }
+  &.opened, &.active {
+    display: block;
+  }
 
-// .slide {
-//   display: none;
-// }
-
-// .slide.visible {
-//   display: block;
-// }
-
-// .opened, .active {
-//   opacity: 1;
-//   display: block;
-// }
+}

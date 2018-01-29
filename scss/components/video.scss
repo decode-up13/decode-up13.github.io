@@ -77,17 +77,16 @@
       }
     }
   }
-}
-
-.slide {
-  display: none;
-}
-
-.slide.visible {
-  display: block;
-}
-
-.opened, .active {
-  opacity: 1;
-  display: block;
+  .slide {
+    display: none;
+  }
+  
+  .slide.visible {
+    display: block;
+  }
+  
+  &.opened, &.active {
+    opacity: 1;
+    display: block;
+  }
 }

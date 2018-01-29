@@ -1,22 +1,20 @@
 mixin popup(type)
   if type === "video"
     .popup-video#popup-video
-        button.cross(type="button")
-          span.cross-bar
-        .right-arrow
-        .left-arrow
-        figcaption  
-          block
+      button.cross(type="button")
+        span.cross-bar
+      .right-arrow
+      .left-arrow
+      block
   if type === "photo"
     .popup-photo#popup-photo
-        button.cross(type="button")
-          span.cross-bar
-        .right-arrow
-        .left-arrow 
-        block
+      button.cross(type="button")
+        span.cross-bar
+      //- .right-arrow
+      //- .left-arrow 
+      block
   if type === "paper"
     .popup-paper
-
       figure.paper-open-vert#popup-paper
         button.cross(type="button")
           span.cross-bar
