@@ -44,11 +44,22 @@ block content
     p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
     p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. 
   +popup("photo") 
-    #slideshow  
+    .slideshow  
       .slide.visible
         img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg")
         .popup-caption 
           p 6 juin 2015 : la journée de la mini-jupe à Tunis
-  
+  +popup("video") 
+    .slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/lcMmEis7o9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/2R35303JW5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/h-c5TnDWdGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 append scripts
   //-additional scripts
