@@ -211,7 +211,6 @@ nav.menu-left {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	background: #ce8427;
 	color: white;
   text-align: center;
   transition: right 0.5s;
@@ -251,7 +250,43 @@ a {
   color: white;
 }
 
+  //changing color of the menu
+  .underwear {
+    nav.menu-left {
+      background-color: #e8dcd6;
+    }
+  }
+  
+  .bikini {
+    nav.menu-left {
+      background-color:#716943
+    }
+  }
+  
+  .pantalon {
+    nav.menu-left {
+      background-color: black;
+    }
+  }
+  
+  .mini-jupe {
+    nav.menu-left {
+      background-color:  #ce8427;
+    }
+  }
 
+  .destroy {
+    nav.menu-left {
+      background-color: #c5d92c;
+    }
+  }
+
+  .jupe-homme {
+    nav.menu-left {
+      background-color:#46424d;
+    }
+  }
+  
 
 // RESPONSIVE FOOTER
 
