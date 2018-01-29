@@ -44,13 +44,13 @@ block content
     p.text Contester l’ordre politique et social a été l’objectif principal des créateurs des pièces destroys. De nos jours, ces vêtements connaissent une nouvelle envergure : des pièces fortes qui habilleront nos tenues avec leurs coupes délavées, slim et zippées aux chevilles.  
     p.text Les pièces destroys conviennent parfaitement au goût vestimentaire de cette nouvelle génération. Les déchirures et trous se font manuellement.  
   +popup("photo") 
-    #slideshow  <!-- les alts sont laissés vides pour éviter la redondance avec la légende -->
-      .slide.visible
-        img.popup-img(src="src/images/destroy/popup-destroy-1.jpg" alt=" ")
+    .slide-container
+      .slide-element
+        img.popup-img(src="src/images/destroy/popup-destroy-1.jpg")
         .popup-caption 
           p Les Sex Pistols, groupe punk anglais
-      .slide.hidden
-        img.popup-img(src="src/images/destroy/popup-destroy-2.jpg" alt=" ")
+      .slide-element
+        img.popup-img(src="src/images/destroy/popup-destroy-2.jpg")
         .popup-caption 
           p La mode punk dans les années 1980
   +popup("video") 
