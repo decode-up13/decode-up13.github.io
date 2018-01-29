@@ -53,6 +53,14 @@ block content
         img.popup-img(src="src/images/destroy/popup-destroy-2.jpg")
         .popup-caption 
           p La mode punk dans les années 1980
-      
+  +popup("video") 
+    .slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/xB3nfGnIHrk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/Q9KQ6Nhrzps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   
 append scripts
   //-additional scripts
