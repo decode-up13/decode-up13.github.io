@@ -39,7 +39,7 @@ var current = null;
 var next = null;
 var prev = null;
 
-$("#right-arrow").click(function() {
+$(".right-arrow").click(function() {
 
     if (compt < long) {
 
@@ -60,7 +60,7 @@ $("#right-arrow").click(function() {
     }
 });
 
-$("#left-arrow").click(function() {
+$(".left-arrow").click(function() {
 
     if ((compt > 1) && (next != null) && (current != null) && (prev != null)) {
 
