@@ -7,15 +7,15 @@ include ../components/popup.pug
 +popup("accessibility")
 footer.wrapper 
   .footer-element
-    a.logo-link(href="../../index.html")
-      img#logo-img(src="../src/images/logo-decode.png")
-      img#logo-img-white(src="../src/images/logo-decode-white.png" alt="logo de decode")
+    a.logo-link(href="../../index.html" title="retour à l'accueil")
+      img#logo-img(src="../src/images/logo-decode.png" alt=" ")
+      img#logo-img-white(src="../src/images/logo-decode-white.png" alt=" ")
       
   .footer-element
     p#footer-element-copyright © 2018 DIMIC
   .footer-element
     ul.menu-list.menu-credits
-      li.menu-element.toTranslate#js-popup-accesibility(data-translationid="label-btn-accessibility" data-translationtype="html") accessibilité
-      li.menu-element.toTranslate#js-popup-about(data-translationid="label-btn-about" data-translationtype="html") à propos
-      li.menu-element.toTranslate#js-popup-credit(data-translationid="label-btn-credits" data-translationtype="html") crédits
-      li.menu-element#js-popup-rs RS
+      li.menu-element.toTranslate#js-popup-accesibility(data-translationid="label-btn-accessibility" data-translationtype="html" aria-label="lien vers page accessibilité") accessibilité
+      li.menu-element.toTranslate#js-popup-about(data-translationid="label-btn-about" data-translationtype="html" aria-label="lien vers page à propos") à propos
+      li.menu-element.toTranslate#js-popup-credit(data-translationid="label-btn-credits" data-translationtype="html" aria-label="lien vers page crédis") crédits
+      li.menu-element#js-popup-rs(aria-label="lien vers page réseaux sociaux") RS

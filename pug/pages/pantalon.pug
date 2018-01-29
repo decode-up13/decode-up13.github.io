@@ -24,37 +24,37 @@ block content
       .block-content__left
         p.description Quand il commence à être porté par les femmes, le pantalon manifeste leur émancipation. En 1909, hormis les femmes qui faisaient de la bicyclette, du ski ou du cheval, mettre un pantalon était interdit.
         .anchor-pantalon
-          img.anchor-pantalon-img(src="src/images/pantalon/col.svg")
-          img.anchor-pantalon-hover(src="src/images/pantalon/col-hover.png")
+          img.anchor-pantalon-img(src="src/images/pantalon/col.svg" alt= " ")
+          img.anchor-pantalon-hover(src="src/images/pantalon/col-hover.png" alt=" ")
       .block-content__middle    
         .picto-container
-          img.picto-trace(src="src/images/pantalon/trace.svg" alt="")
+          img.picto-trace(src="src/images/pantalon/trace.svg" alt=" ")
           .picto-element-pantalon.picto-element-pantalon__photo#js-picto-photo
-            img.picto(src="src/images/jupe-homme/photo-camera.svg" alt="")
-            img.picto-hover(src="src/images/jupe-homme/photo-camera-hover.png" alt="")
+            img.picto(src="src/images/jupe-homme/photo-camera.svg" alt=" voir les ressources visuelles")
+            img.picto-hover(src="src/images/jupe-homme/photo-camera-hover.png" alt="voir les ressources visuelles")
           .picto-element-pantalon.picto-element-pantalon__paper#js-picto-paper
-            img.picto(src="src/images/jupe-homme/paper.svg" alt="")
-            img.picto-hover(src="src/images/jupe-homme/paper-hover.png" alt="")
+            img.picto(src="src/images/jupe-homme/paper.svg" alt="lire la description")
+            img.picto-hover(src="src/images/jupe-homme/paper-hover.png" alt="lire la description")
           .picto-element-pantalon.picto-element-pantalon__camera#js-picto-video
-            img.picto(src="src/images/jupe-homme/video-camera.svg" alt="")
-            img.picto-hover(src="src/images/jupe-homme/video-camera-hover.png" alt="")
+            img.picto(src="src/images/jupe-homme/video-camera.svg" alt="voir les vidéos")
+            img.picto-hover(src="src/images/jupe-homme/video-camera-hover.png" alt="voir les vidéos")
     
   +popup("paper")
     h3.title petite histoire du pantalon 
     p.text Un risque d'emprisonnement pour les femmes qui le portaient. Le pantalon a fait son entrée dans les années 30 dans l’hexagone. Mais c’est en 1970 que son apogée débute. À la cheville, aux genoux, aux mollets : avec le pantalon il est facile de se tenir dans n’importe quelle position. Les femmes imposent le pantalon, à tel point que 12 500 000 pantalons ont été vendus en 1972 en France.  
     p.text “En portant un pantalon, une femme peut développer son maximum de féminité”. Tels sont les propos du styliste français Yves-Saint-Laurent, qui va créer le smoking féminin. Mais c’est Hollywood qui va véritablement permettre de démocratiser le pantalon féminin, par sa mode et ses films.
   +popup("photo") 
-    .slideshow  
-      .slide.visible
-        img.popup-img(src="src/images/pantalon/popup-pantalon-1.jpg")
+    .slideshow  <!-- les alts sont laissés vides pour éviter la redondance avec la légende -->
+      .slide.visible 
+        img.popup-img(src="src/images/pantalon/popup-pantalon-1.jpg" alt=" ")
         .popup-caption 
           p Le smoking féminin, par Yves Saint Laurent
       .slide.hidden
-        img.popup-img(src="src/images/pantalon/popup-pantalon-2.jpg")
+        img.popup-img(src="src/images/pantalon/popup-pantalon-2.jpg" alt=" ")
         .popup-caption 
           p Coco Chanel en pantalon
       .slide.hidden
-        img.popup-img(src="src/images/pantalon/popup-pantalon-3.png")
+        img.popup-img(src="src/images/pantalon/popup-pantalon-3.png" alt=" ")
         .popup-caption 
           p Permission de travestissement, 1862
   +popup("video") 

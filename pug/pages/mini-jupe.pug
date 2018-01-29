@@ -24,29 +24,29 @@ block content
       .block-content__left
         p.description Début du 20ème siècle, la jupe se raccourcit. Dans les années 60, en Angleterre apparaît la mini-jupe. C'est Marie Quant, styliste anglaise qui la propulse. 
         .anchor-mini-jupe  
-          img.anchor-mj-img(src="src/images/mini-jupe/oval.svg")
-          img.anchor-mj-hover(src="src/images/mini-jupe/oval-hover.png")
+          img.anchor-mj-img(src="src/images/mini-jupe/oval.svg" alt=" ")
+          img.anchor-mj-hover(src="src/images/mini-jupe/oval-hover.png" alt=" ")
       .block-content__middle    
         .picto-container
-          img.picto-broderie(src="src/images/mini-jupe/broderie.svg" alt="")
+          img.picto-broderie(src="src/images/mini-jupe/broderie.svg" alt=" ")
           .picto-element-mj.picto-element-mj__photo#js-picto-photo
-            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="voir les ressources visuelles")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="voir les ressources visuelles")
           .picto-element-mj.picto-element-mj__paper#js-picto-paper
-            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="lire la description")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="lire la description")
           .picto-element-mj.picto-element-mj__camera#js-picto-video
-            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="voir les vidéos")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="voir les vidéos")
       
   +popup("paper")
     h3.title petite histoire de la mini-jupe
     p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
     p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. 
-  +popup("photo") 
-    .slideshow  
+  +popup("photo")
+    .slideshow   <!-- les alts sont laissés vides pour éviter la redondance avec la légende --> 
       .slide.visible
-        img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg")
+        img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg" alt=" ")
         .popup-caption 
           p 6 juin 2015 : la journée de la mini-jupe à Tunis
   +popup("video") 

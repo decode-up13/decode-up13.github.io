@@ -6,12 +6,12 @@ header.top-navigation
 		li.menu-element.btn-lang(data-lang="ar") العربي
 		li.menu-element.btn-lang(data-lang="ja") 日本の
 
-	button(class="burger-menu" type="button")
+	button(class="burger-menu" type="button" aria-label="ouvrir/fermer le menu")
 		span.bar
 	nav(class="menu-left" id="menu-navigation")
 		.menu-title-top 
 			a.toTranslate(href="../../summary.html" data-translationid="chapter-label" data-translationtype="html") CHAPITRES
-		.menu-content
+		.menu-content <!-- les titles ne sont pas renseignés pour éviter les redondances-->
 			ul.menu-left-list
 				li 
 					a.toTranslate(href='../../underwear.html' data-translationid="chapter1_title" data-translationtype="html") LE SOUS VETEMENT
