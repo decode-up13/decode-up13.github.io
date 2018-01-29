@@ -90,9 +90,23 @@
         transform: translate(-30%,0);
       }
     }
-
-   
-
   }
 
+  .picto-container {
+    .picto-element-pantalon {
+      position: absolute;
+      &__photo {
+        top: 40px;
+        left: 230px;
+      }
+      &__paper {
+        top: 40px;
+        left: 375px;
+      }
+      &__camera {
+        top: 40px;
+        left: 515px;
+      }
+    }
+  }
 }
