@@ -6,10 +6,14 @@
 @import './components/menu';
 @import './components/popup';
 @import './components/paper';
-
+@import './components/photo';
+@import './components/video';
 
 body {
   margin: 0;
+  overflow: hidden;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 button {
@@ -45,14 +49,15 @@ p {
 }
 
 .block-content {
-  width: 100vw;
+  width: 90vw;
   display: flex;
   justify-content: space-between;
-  &__left, &__right {
-    width: 30vw;
+  &__left {
+    width: 35vw;
   }
   &__middle {
-    padding-top: 20vh;
+    padding-top: 10vh;
+    margin-right: 22vw;
   }
 }
 
@@ -61,6 +66,11 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+}
+
+.content-wrapper {
+  margin-left: 55px;
+  margin-right: 55px;
 }
 .underwear {
   background: url('../src/images/bg-sous-vetements.png') no-repeat fixed center;
@@ -93,4 +103,34 @@ p {
 }
 main.wrapper {
   flex:1;
+}
+
+
+// RESPONSIVE
+
+@media screen and (max-width: 960px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  &__left {
+    width: 80vw;
+    margin-left: -60px;
+  }
+  &__middle {
+    margin-left: 50%;
+    transform: translate(-30%,0);
+  }
+}
+
+.picto-container {
+  margin-bottom: 40px;
+}
+
 }

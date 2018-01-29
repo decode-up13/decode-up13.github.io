@@ -6,15 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw; }
-  .anchor-mini-jupe:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center; }
-    .anchor-mini-jupe:hover .anchor-mj-img {
-      display: none; }
-    .anchor-mini-jupe:hover .anchor-mj-hover {
-      display: block;
-      margin: auto; }
 
 .anchor-mj-img, .anchor-mj-hover {
   width: 30px;
@@ -26,27 +17,27 @@
 .picto-container {
   position: relative; }
   .picto-container .picto-broderie {
-    width: 130px;
+    width: 110px;
     display: block;
     margin: 0 auto; }
   .picto-container .picto-element-mj {
     position: absolute;
     cursor: pointer; }
     .picto-container .picto-element-mj__photo {
-      top: 82px;
+      top: 62px;
       left: -90px;
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
     .picto-container .picto-element-mj__paper {
-      top: 82px;
+      top: 62px;
       right: -90px;
       -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       transform: rotate(-90deg); }
     .picto-container .picto-element-mj__camera {
-      bottom: 275px;
-      right: 36px;
+      bottom: 240px;
+      right: 26px;
       -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
       transform: rotate(-180deg); }

@@ -29,21 +29,47 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-bow(src="src/images/bikini/bow.svg" alt="")
-          .picto-element-bikini.picto-element-bikini__photo
+          .picto-element-bikini.picto-element-bikini__photo#js-picto-photo
             img.picto(src="src/images/picto-photo-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
           .picto-element-bikini.picto-element-bikini__paper#js-picto-paper
             img.picto(src="src/images/picto-paper-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
-          .picto-element-bikini.picto-element-bikini__camera
+          .picto-element-bikini.picto-element-bikini__camera#js-picto-video
             img.picto(src="src/images/picto-camera-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
-      .block-content__right
+    
   +popup("paper")
     h3.title petite histoire du bikini
-    p.text Un mot sexy. Un mot court.  Le bikini est d’origine française. C’est l’ingénieur automobile Louis Réard qui, en juin 1946 crée le maillot avec moins d’1m² de tissus. Il se compose uniquement d’un bandeau pour la poitrine et deux triangles pour le bas. Le nombril est dévoilé pour la première fois !  
+    p.text Un mot sexy. Un mot court.  Le bikini est d’origine française. C’est l’ingénieur automobile Louis Réard qui, en juin 1946 crée le maillot avec moins d’1m² de tissu. Il se compose uniquement d’un bandeau pour la poitrine et de deux triangles pour le bas. Le nombril est dévoilé pour la première fois !  
     p.text La danseuse de cabaret Micheline Bernardini présente le bikini à la Piscine Molitor le 5 juillet 1946. Aucun mannequin n’ose à l’époque. En 1932, le couturier parisien Jacques Heim tenta de démocratiser un maillot de bain deux-pièces du nom “d’atome”.
     p.text Le bikini est finalement accepté en 1956 avec la libération des moeurs. L’icône du cinéma américain, Marilyn Monroe défraie la chronique en 1953 en s’affichant avec un bikini
+  +popup("photo") 
+    .slide-container 
+      .slide-element
+        img.popup-img(src="src/images/bikini/popup-bikini-1.jpg")
+        .popup-caption 
+          p Mosaïques de la série « Les Filles en bikini » (env. 300 ap. J.-C.) à la Villa del Casale, Sicile.
+      .slide-element
+        img.popup-img(src="src/images/bikini/popup-bikini-3.jpg")
+        .popup-caption 
+          p 1962 : Ursula Andress dans James Bond contre Dr NO
+      .slide-element
+        img.popup-img(src="src/images/bikini/popup-bikini-4.jpg")
+        .popup-caption 
+          p Louis Réard, inventeur du bikini.
+      .slide-element
+        img.popup-img(src="src/images/bikini/popup-bikini-5.jpg")
+        .popup-caption 
+          p L'atoll de Bikini, îles Marshall.
+  +popup("video") 
+    .slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/KXCcJ_DnJbM" frameborder="0" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/7VEJqRCQMH8" frameborder="0" allowfullscreen></iframe>
 
 append scripts
   //-additional scripts

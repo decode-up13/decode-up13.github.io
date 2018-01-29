@@ -29,20 +29,42 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-trace(src="src/images/pantalon/trace.svg" alt="")
-          .picto-element-pantalon.picto-element-pantalon__photo
+          .picto-element-pantalon.picto-element-pantalon__photo#js-picto-photo
             img.picto(src="src/images/jupe-homme/photo-camera.svg" alt="")
             img.picto-hover(src="src/images/jupe-homme/photo-camera-hover.png" alt="")
           .picto-element-pantalon.picto-element-pantalon__paper#js-picto-paper
             img.picto(src="src/images/jupe-homme/paper.svg" alt="")
             img.picto-hover(src="src/images/jupe-homme/paper-hover.png" alt="")
-          .picto-element-pantalon.picto-element-pantalon__camera
+          .picto-element-pantalon.picto-element-pantalon__camera#js-picto-video
             img.picto(src="src/images/jupe-homme/video-camera.svg" alt="")
             img.picto-hover(src="src/images/jupe-homme/video-camera-hover.png" alt="")
-      .block-content__right
+    
   +popup("paper")
     h3.title petite histoire du pantalon 
-    p.text Un risque d'emprisonnement pour les femmes qui le portaient. Le pantalon a fait son entrée dans les années 30 dans l’hexagone. Mais c’est en 1970 que son apogée débute. À la cheville, aux genoux, aux mollets, avec le pantalon il est facile de se tenir dans n’importe quelle positions d’après certaines. Les femmes imposent le pantalon à tel point que 12 500 000 pantalons ont été vendus en 1972 en France.  
-    p.text “En portant un pantalon, une femme peut développer son maximum de féminité”. Tels sont les propos du styliste français Yves-Saint-Laurent qui va créer le smoking féminin. Mais c’est Hollywood qui va permettre de démocratiser le pantalon féminin, par sa mode et ses films.
-
+    p.text Un risque d'emprisonnement pour les femmes qui le portaient. Le pantalon a fait son entrée dans les années 30 dans l’hexagone. Mais c’est en 1970 que son apogée débute. À la cheville, aux genoux, aux mollets : avec le pantalon il est facile de se tenir dans n’importe quelle position. Les femmes imposent le pantalon, à tel point que 12 500 000 pantalons ont été vendus en 1972 en France.  
+    p.text “En portant un pantalon, une femme peut développer son maximum de féminité”. Tels sont les propos du styliste français Yves-Saint-Laurent, qui va créer le smoking féminin. Mais c’est Hollywood qui va véritablement permettre de démocratiser le pantalon féminin, par sa mode et ses films.
+  +popup("photo") 
+    .slideshow  
+      .slide.visible
+        img.popup-img(src="src/images/pantalon/popup-pantalon-1.jpg")
+        .popup-caption 
+          p Le smoking féminin, par Yves Saint Laurent
+      .slide.hidden
+        img.popup-img(src="src/images/pantalon/popup-pantalon-2.jpg")
+        .popup-caption 
+          p Coco Chanel en pantalon
+      .slide.hidden
+        img.popup-img(src="src/images/pantalon/popup-pantalon-3.png")
+        .popup-caption 
+          p Permission de travestissement, 1862
+  +popup("video") 
+    .slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/g5yWBa2uym8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/w4aZ2eT3ol8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
 append scripts
   //-additional scripts

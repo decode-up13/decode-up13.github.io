@@ -29,20 +29,37 @@ block content
       .block-content__middle    
         .picto-container
           img.picto-broderie(src="src/images/mini-jupe/broderie.svg" alt="")
-          .picto-element-mj.picto-element-mj__photo
+          .picto-element-mj.picto-element-mj__photo#js-picto-photo
             img.picto(src="src/images/picto-photo-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
           .picto-element-mj.picto-element-mj__paper#js-picto-paper
             img.picto(src="src/images/picto-paper-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
-          .picto-element-mj.picto-element-mj__camera
+          .picto-element-mj.picto-element-mj__camera#js-picto-video
             img.picto(src="src/images/picto-camera-dashed.svg" alt="")
             img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
-      .block-content__right
+      
   +popup("paper")
     h3.title petite histoire de la mini-jupe
     p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
-    p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toute les morphologies grâce à ses différentes coupes. 
+    p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. 
+  +popup("photo") 
+    .slideshow  
+      .slide.visible
+        img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg")
+        .popup-caption 
+          p 6 juin 2015 : la journée de la mini-jupe à Tunis
+  +popup("video") 
+    .slideshow  
+      .slide.visible
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/lcMmEis7o9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/2R35303JW5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      .slide.hidden
+        .video-container
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/h-c5TnDWdGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 append scripts
   //-additional scripts

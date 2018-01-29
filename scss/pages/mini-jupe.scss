@@ -6,18 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw;
-  &:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center;
-    .anchor-mj-img {
-      display: none;
-    }
-    .anchor-mj-hover {
-      display: block;
-      margin: auto;
-    }
-  }
 }
 
 .anchor-mj-img, .anchor-mj-hover {
@@ -31,7 +19,7 @@
 .picto-container {
   position: relative;
   .picto-broderie {
-    width: 130px;
+    width: 110px;
     display: block;
     margin: 0 auto;
   }
@@ -40,18 +28,18 @@
     position: absolute;
     cursor: pointer;
     &__photo {
-      top: 82px;
+      top: 62px;
       left: -90px;
       transform: rotate(90deg);
     }
     &__paper {
-      top: 82px;
+      top: 62px;
       right: -90px;
       transform: rotate(-90deg);
     }
     &__camera {
-      bottom: 275px;
-      right: 36px;
+      bottom: 240px;
+      right: 26px;
       transform: rotate(-180deg);
     }
     &:hover {

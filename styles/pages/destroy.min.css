@@ -6,15 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw; }
-  .anchor-destroy:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center; }
-    .anchor-destroy:hover .anchor-destroy-img {
-      display: none; }
-    .anchor-destroy:hover .anchor-destroy-hover {
-      display: block;
-      margin: auto; }
 
 .anchor-destroy-img, .anchor-destroy-hover {
   width: 60px; }
@@ -25,9 +16,9 @@
 .picto-container {
   position: relative; }
   .picto-container .picto-pin {
-    width: 300px;
+    width: 200px;
     display: block;
-    margin: -110px auto;
+    margin: 30px 80px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
@@ -35,14 +26,14 @@
     position: absolute;
     cursor: pointer; }
     .picto-container .picto-element-destroy__photo {
-      top: 190px;
-      left: -40px; }
+      top: 120px;
+      left: 40px; }
     .picto-container .picto-element-destroy__paper {
-      top: 230px;
-      right: -15px; }
+      top: 142px;
+      right: 65px; }
     .picto-container .picto-element-destroy__camera {
-      top: 210px;
-      right: 120px; }
+      top: 130px;
+      right: 150px; }
     .picto-container .picto-element-destroy:hover .picto {
       display: none; }
     .picto-container .picto-element-destroy:hover .picto-hover {

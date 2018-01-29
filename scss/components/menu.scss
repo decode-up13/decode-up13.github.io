@@ -31,7 +31,7 @@
     height: 0;
     background: $noir;
   }
-  &:hover {
+  &:hover, &.selected {
     cursor: pointer;
     color: $noir;
     font-weight: bold;
@@ -90,6 +90,7 @@ footer.wrapper {
   &:last-child {
     width: 42.5vw;
     text-align: right;
+    padding-right: 15px;
   }
 }
 
@@ -128,6 +129,8 @@ footer.wrapper {
   outline: 0;
   padding: 0;
   border: 0;
+  margin-top: 5px;
+  margin-right: 10px;
   &:hover {
     cursor: pointer;
   }
@@ -220,6 +223,7 @@ nav.menu-left {
 .menu-content {
   height: 80vh;
   .menu-left-list {
+    text-transform: uppercase;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -233,6 +237,7 @@ nav.menu-left {
 }
 
 .menu-title-top {
+  text-transform: uppercase;
 	margin: 0;
 	padding-top : 50px;
 	padding-bottom: 30px;
@@ -241,4 +246,28 @@ nav.menu-left {
 
 a {
   color: white;
+}
+
+
+
+// RESPONSIVE FOOTER
+
+@media screen and (max-width: 960px) {
+
+
+footer.wrapper {
+  width: 95vw;
+  .footer-element {
+    .logo-link {
+      width: 20vw;
+    }
+    #footer-element-copyright {
+      display: none;
+    }
+    ul.menu-list.menu-credits {
+      width: 80vw;
+    }
+  }
+}
+
 }

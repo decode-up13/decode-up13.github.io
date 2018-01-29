@@ -9,27 +9,30 @@
     <link href="./styles/main.min.css" rel="stylesheet">
     <link href="./styles/pages/mini-jupe.min.css" rel="stylesheet">
   </head>
+  <link href="./styles/slick/slick-theme.css" rel="stylesheet">
+  <link href="./styles/slick/slick.css" rel="stylesheet">
+  <link href="./styles/pages/mini-jupe.min.css" rel="stylesheet">
   <body class="mini-jupe">
     <div class="chapter-page">
       <header class="top-navigation">
-        <ul class="menu-list">
-          <li class="menu-element">français</li>
-          <li class="menu-element">english</li>
-          <li class="menu-element">español</li>
-          <li class="menu-element">العربي</li>
-          <li class="menu-element">日本の</li>
+        <ul class="menu-list menu-lang">
+          <li class="menu-element btn-lang" data-lang="fr">français</li>
+          <li class="menu-element btn-lang" data-lang="en">english</li>
+          <li class="menu-element btn-lang" data-lang="es">español</li>
+          <li class="menu-element btn-lang" data-lang="ar">العربي</li>
+          <li class="menu-element btn-lang" data-lang="ja">日本の</li>
         </ul>
         <button class="burger-menu" type="button"><span class="bar"></span></button>
         <nav class="menu-left" id="menu-navigation">
-          <div class="menu-title-top"> <a href="../../summary.html">CHAPITRES</a></div>
+          <div class="menu-title-top"> <a class="toTranslate" href="../../summary.html" data-translationid="chapter-label" data-translationtype="html">CHAPITRES</a></div>
           <div class="menu-content">
             <ul class="menu-left-list">
-              <li> <a href="../../underwear.html">LE SOUS VETEMENT</a></li>
-              <li> <a href="../../bikini.html">LE BIKINI</a></li>
-              <li> <a href="../../pantalon.html">LE PANTALON</a></li>
-              <li> <a href="../../mini-jupe.html">LA MINI JUPE</a></li>
-              <li> <a href="../../destroy.html">LES PIECES DESTROY</a></li>
-              <li> <a href="../../jupe-homme.html">LA JUPE POUR HOMME</a></li>
+              <li> <a class="toTranslate" href="../../underwear.html" data-translationid="chapter1_title" data-translationtype="html">LE SOUS VETEMENT</a></li>
+              <li> <a class="toTranslate" href="../../bikini.html" data-translationid="chapter2_title" data-translationtype="html">LE BIKINI</a></li>
+              <li> <a class="toTranslate" href="../../pantalon.html" data-translationid="chapter3_title" data-translationtype="html">LE PANTALON</a></li>
+              <li> <a class="toTranslate" href="../../mini-jupe.html" data-translationid="chapter4_title" data-translationtype="html">LA MINI JUPE</a></li>
+              <li> <a class="toTranslate" href="../../destroy.html" data-translationid="chapter5_title" data-translationtype="html">LES PIECES DESTROY</a></li>
+              <li> <a class="toTranslate" href="../../jupe-homme.html" data-translationid="chapter6_title" data-translationtype="html">LA JUPE POUR HOMME</a></li>
             </ul>
           </div>
         </nav>
@@ -44,12 +47,11 @@
             </div>
             <div class="block-content__middle">   
               <div class="picto-container"><img class="picto-broderie" src="src/images/mini-jupe/broderie.svg" alt="">
-                <div class="picto-element-mj picto-element-mj__photo"><img class="picto" src="src/images/picto-photo-dashed.svg" alt=""><img class="picto-hover" src="src/images/picto-photo-dashed-hover.svg" alt=""></div>
+                <div class="picto-element-mj picto-element-mj__photo" id="js-picto-photo"><img class="picto" src="src/images/picto-photo-dashed.svg" alt=""><img class="picto-hover" src="src/images/picto-photo-dashed-hover.svg" alt=""></div>
                 <div class="picto-element-mj picto-element-mj__paper" id="js-picto-paper"><img class="picto" src="src/images/picto-paper-dashed.svg" alt=""><img class="picto-hover" src="src/images/picto-paper-dashed-hover.svg" alt=""></div>
-                <div class="picto-element-mj picto-element-mj__camera"><img class="picto" src="src/images/picto-camera-dashed.svg" alt=""><img class="picto-hover" src="src/images/picto-camera-dashed-hover.svg" alt=""></div>
+                <div class="picto-element-mj picto-element-mj__camera" id="js-picto-video"><img class="picto" src="src/images/picto-camera-dashed.svg" alt=""><img class="picto-hover" src="src/images/picto-camera-dashed-hover.svg" alt=""></div>
               </div>
             </div>
-            <div class="block-content__right"></div>
           </div>
         </div>
         <div class="popup-paper">
@@ -58,9 +60,35 @@
             <figcaption>
               <h3 class="title">petite histoire de la mini-jupe</h3>
               <p class="text">Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   </p>
-              <p class="text">Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toute les morphologies grâce à ses différentes coupes. </p>
+              <p class="text">Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. </p>
             </figcaption>
           </figure>
+        </div>
+        <div class="popup-photo" id="popup-photo">
+          <button class="cross" type="button"><span class="cross-bar"></span></button> 
+          <div class="slideshow"> 
+            <div class="slide visible"><img class="popup-img" src="src/images/mini-jupe/popup-mini-jupe-1.jpg">
+              <div class="popup-caption"> 
+                <p>6 juin 2015 : la journée de la mini-jupe à Tunis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-video" id="popup-video">
+          <button class="cross" type="button"><span class="cross-bar"></span></button>
+          <div class="right-arrow"></div>
+          <div class="left-arrow"></div> 
+          <div class="slideshow"> 
+            <div class="slide visible">
+              <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/lcMmEis7o9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+            <div class="slide hidden">
+              <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/2R35303JW5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+            <div class="slide hidden">
+              <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/h-c5TnDWdGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            </div>
+          </div>
         </div>
       </main>
             <div class="popup" id="popup-about">
@@ -117,15 +145,16 @@
         </div>
         <div class="footer-element">
           <ul class="menu-list menu-credits">
-            <li class="menu-element" id="js-popup-accesibility">Accessibilité</li>
-            <li class="menu-element" id="js-popup-about">A Propos</li>
-            <li class="menu-element" id="js-popup-credit">Crédits</li>
+            <li class="menu-element toTranslate" id="js-popup-accesibility" data-translationid="label-btn-accessibility" data-translationtype="html">accessibilité</li>
+            <li class="menu-element toTranslate" id="js-popup-about" data-translationid="label-btn-about" data-translationtype="html">à propos</li>
+            <li class="menu-element toTranslate" id="js-popup-credit" data-translationid="label-btn-credits" data-translationtype="html">crédits</li>
             <li class="menu-element" id="js-popup-rs">RS</li>
           </ul>
         </div>
       </footer>
     </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/build/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/build/slick/slick.min.js"></script>
   <script src="/build/main.min.js"></script>
 </html>
