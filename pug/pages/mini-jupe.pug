@@ -19,10 +19,10 @@ block vars
 block content
   //- page content
   .content-wrapper
-    h1.title la mini-jupe
+    h1.title.toTranslate(data-translationid="chapter4_title" data-translationtype="html") la mini-jupe
     .block-content.flex  
       .block-content__left
-        p.description Début du 20ème siècle, la jupe se raccourcit. Dans les années 60, en Angleterre apparaît la mini-jupe. C'est Marie Quant, styliste anglaise qui la propulse. 
+        p.description.toTranslate(data-translationid="chapter4_description" data-translationtype="html") Début du 20ème siècle, la jupe se raccourcit. Dans les années 60, en Angleterre apparaît la mini-jupe. C'est Marie Quant, styliste anglaise qui la propulse. 
         .anchor-mini-jupe  
           img.anchor-mj-img(src="src/images/mini-jupe/oval.svg" alt=" ")
           img.anchor-mj-hover(src="src/images/mini-jupe/oval-hover.png" alt=" ")
@@ -40,15 +40,15 @@ block content
             img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="voir les vidéos")
       
   +popup("paper")
-    h3.title petite histoire de la mini-jupe
-    p.text Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
-    p.text Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. 
+    h3.title.toTranslate(data-translationid="chapter4_long-text_title" data-translationtype="html") Mini, femme et LIBRE
+    p.text.toTranslate(data-translationid="chapter4_long-text_paragraph1" data-translationtype="html") Courte, sexy, cette jupe est un vêtement décliné en différents modèles variés : évasée, moulante, droite, plissée, imprimée...   
+    p.text.toTranslate(data-translationid="chapter4_long-text_paragraph2" data-translationtype="html") Accordée avec une paire de chaussures à talons, la mini-jupe met en valeur les jambes des femmes. Elle s’adapte également à toutes les morphologies grâce à ses différentes coupes. 
   +popup("photo")
     .slideshow   <!-- les alts sont laissés vides pour éviter la redondance avec la légende --> 
       .slide.visible
         img.popup-img(src="src/images/mini-jupe/popup-mini-jupe-1.jpg" alt=" ")
         .popup-caption 
-          p 6 juin 2015 : la journée de la mini-jupe à Tunis
+          .toTranslate(data-translationid="" data-translationtype="html") 6 juin 2015 : la journée de la mini-jupe à Tunis
   +popup("video") 
     .slideshow  
       .slide.visible
