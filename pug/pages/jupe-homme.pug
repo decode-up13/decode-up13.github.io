@@ -19,10 +19,10 @@ block vars
 block content
   //- page content
   .content-wrapper
-    h1.title la jupe pour homme
+    h1.title.toTranslate(data-translationid="chapter6_title" data-translationtype="html") la jupe pour homme
     .block-content.flex  
       .block-content__left
-        p.description Au XVIème siècle, les hommes commencent à porter des tuniques avec des collants. Puis, au XVIIIème siècle, précisément en 1727, naît le kilt. C’est une jupe d'origine danoise popularisée par les guerriers Vikings.  
+        p.description.toTranslate(data-translationid="chapter6_description" data-translationtype="html") Au XVIème siècle, les hommes commencent à porter des tuniques avec des collants. Puis, au XVIIIème siècle, précisément en 1727, naît le kilt. C’est une jupe d'origine danoise popularisée par les guerriers Vikings.  
         .anchor-jh 
           img.anchor-jh-img(src="src/images/jupe-homme/anchor.svg" alt=" ")
           img.anchor-jh-hover(src="src/images/jupe-homme/anchor-hover.png" alt=" ")
@@ -40,19 +40,19 @@ block content
             img.picto-hover(src="src/images/jupe-homme/video-camera-hover.png" alt="voir les vidéos")
      
   +popup("paper")
-    h3.title La jupe... au masculin ?
-    p.text Sur leur lieu de travail, dans la rue, dans les centres commerciaux… les femmes en pantalon passent inaperçues.  Pourtant, nous ne pouvons en dire autant pour un homme en jupe.   
-    p.text La jupe a toujours été considérée comme un vêtement dédié aux femmes. Encore aujourd’hui, voir un homme en jupe choque, même si des marques de vêtements comme Zara commercialisent des jupes pour homme. 
+    h3.title.toTranslate(data-translationid="chapter6_long-text_title" data-translationtype="html") La jupe... au masculin ?
+    p.text.toTranslate(data-translationid="chapter6_long-text_paragraph1" data-translationtype="html") Sur leur lieu de travail, dans la rue, dans les centres commerciaux… les femmes en pantalon passent inaperçues.  Pourtant, nous ne pouvons en dire autant pour un homme en jupe.   
+    p.text.toTranslate(data-translationid="chapter6_long-text_paragraph2" data-translationtype="html") La jupe a toujours été considérée comme un vêtement dédié aux femmes. Encore aujourd’hui, voir un homme en jupe choque, même si des marques de vêtements comme Zara commercialisent des jupes pour homme. 
   +popup("photo") 
     .slide-container 
       .slide-element
         img.popup-img(src="src/images/jupe-homme/popup-jupe-homme-1.jpg" alt=" ")
         .popup-caption 
-          p La jupe pour homme, par Anders Landinger
+          p.toTranslate(data-translationid="" data-translationtype="html") La jupe pour homme, par Anders Landinger
       .slide-element
         img.popup-img(src="src/images/jupe-homme/popup-jupe-homme-2.jpg" alt=" ")
         .popup-caption 
-          p La jupe pour homme commercialisée par Zara en 2014
+          p.toTranslate(data-translationid="" data-translationtype="html") La jupe pour homme commercialisée par Zara en 2014
   +popup("video") 
     .slideshow  
       .slide.visible
