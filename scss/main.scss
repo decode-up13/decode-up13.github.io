@@ -105,7 +105,6 @@ main.wrapper {
   flex:1;
 }
 
-
 // RESPONSIVE
 
 @media screen and (max-width: 960px) {
@@ -124,7 +123,7 @@ main.wrapper {
     margin-left: -60px;
   }
   &__middle {
-    margin-left: 50%;
+    margin-left: 40%;
     transform: translate(-30%,0);
   }
 }

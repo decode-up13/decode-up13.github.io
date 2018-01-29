@@ -1,5 +1,8 @@
 .top-navigation {
   z-index: 2;
+  .menu-lang {
+    width: 91vw;
+  }
 }
 
 //
@@ -254,18 +257,20 @@ a {
 
 @media screen and (max-width: 960px) {
 
+  nav.menu-left {
+    position: fixed;
+    top:0;
+    right: -50vw;
+    width : 50vw;
+}
 
 footer.wrapper {
-  width: 95vw;
   .footer-element {
-    .logo-link {
-      width: 20vw;
+    &:last-child {
+      width: 212vw;
     }
     #footer-element-copyright {
       display: none;
-    }
-    ul.menu-list.menu-credits {
-      width: 80vw;
     }
   }
 }
