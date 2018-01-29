@@ -16,13 +16,13 @@ block vars
 block content
   //- page content
   video(class="background-video" id="landing-video" loop autoplay muted)
-    source(src="/src/video/video-intro.mp4")
+    source(src="/src/video/video-intro.mp4" alt=" ")
     
   .content-wrapper#content-wrapper-landing
     .logo
-      img(src='src/images/logo-decode-white.png')
+      img(src='src/images/logo-decode-white.png' alt="logo du webdocumentaire")
     
-    a(href="sommaire.html" title="")
+    a(href="summary.html" title="suivant")
       button.toTranslate(type="button" id="landing-button" data-translationid="btn-begin" data-translationtype="html") commencer
 
 append scripts
