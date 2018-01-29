@@ -6,18 +6,6 @@
   border-right: dashed 1.5px white;
   margin-left: 8vw;
   margin-top: 6vw;
-  &:hover {
-    cursor: pointer;
-    border-right: dashed 1.5px black;
-    text-align: center;
-    .anchor-destroy-img {
-      display: none;
-    }
-    .anchor-destroy-hover {
-      display: block;
-      margin: auto;
-    }
-  }
 }
 
 .anchor-destroy-img, .anchor-destroy-hover {
@@ -31,9 +19,9 @@
 .picto-container {
   position: relative;
   .picto-pin {
-    width: 300px;
+    width: 200px;
     display: block;
-    margin: -110px auto;
+    margin: 30px 80px;
     transform: rotate(45deg);
   }
   
@@ -41,16 +29,16 @@
     position: absolute;
     cursor: pointer;
     &__photo {
-      top: 190px;
-      left: -40px;
+      top: 120px;
+      left: 40px;
     }
     &__paper {
-      top: 230px;
-      right: -15px;
+      top: 142px;
+      right: 65px;
     }
     &__camera {
-      top: 210px;
-      right: 120px;
+      top: 130px;
+      right: 150px;
     }
     &:hover {
       .picto {
