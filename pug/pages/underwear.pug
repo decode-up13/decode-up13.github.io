@@ -45,16 +45,16 @@ block content
     p.text Visibles ou invisibles, ils trouvent toute leur splendeur et leur élégance dans le confort, donnant une touche d'audace aux tenues des femmes comme des hommes. Body, boxer, caleçon, débardeur, shorty, slip, string, tanga, soutien-gorge... sont quelques exemples qui illustrent la diversité de ce type de vêtement.
   +popup("photo") 
     .slideshow  
-      .slide.visible
+      .slide
         img.popup-img(src="src/images/underwear/popup-underwear-1.jpg")
         .popup-caption 
           p Madonna et son corset Jean-Paul Gaultier
   +popup("video") 
-    .slideshow  
-      .slide.visible
+    .slide-container
+      .slide-element
         .video-container
           <iframe width="560" height="315" src="https://www.youtube.com/embed/QssFcT6PRiQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      .slide.hidden
+      .slide-element
         .video-container
          <iframe width="560" height="315" src="https://www.youtube.com/embed/e3H-xkgRsJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
