@@ -1,14 +1,14 @@
 mixin popup(type)
   if type === "video"
     .popup-video#popup-video
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       //- .right-arrow
       //- .left-arrow
       block
   if type === "photo"
     .popup-photo#popup-photo
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       //- .right-arrow
       //- .left-arrow 
@@ -16,14 +16,14 @@ mixin popup(type)
   if type === "paper"
     .popup-paper
       figure.paper-open-vert#popup-paper
-        button.cross(type="button")
+        button.cross(type="button" aria-label="retour au chapitre en cours")
           span.cross-bar
         img(src="./src/images/bg-paper-transparent.png" alt="")
         figcaption
           block
   if type === "about"
     .popup#popup-about
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       h1.popup-title A PROPOS
       p#popup-content-about.popup-content
@@ -44,7 +44,7 @@ mixin popup(type)
 
   if type === "credits"
     .popup#popup-credits
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       h1.popup-title CREDITS
       p.popup-content#popup-content-credits
@@ -88,26 +88,26 @@ mixin popup(type)
 
   if type === "rs"
     .popup#popup-rs
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       h1.popup-title RESEAUX SOCIAUX
       #popup-content-rs.popup-content
         .popup-content-rs-div
-          a(href="#")
-            img.img-rs(src="../src/images/picto-facebook.png" alt="notre page facebook")
+          a(href="#" title="notre page facebook")
+            img.img-rs(src="../src/images/picto-facebook.png" alt=" ")
             p FACEBOOK
         .popup-content-rs-div
-          a(href="#")
-            img.img-rs(src="../src/images/picto-twitter.png" alt="notre page facebook")
+          a(href="#" title="notre page twitter")
+            img.img-rs(src="../src/images/picto-twitter.png" alt=" ")
             p TWITTER
         .popup-content-rs-div
-          a(href="#")
-            img.img-rs(src="../src/images/picto-instagram.png" alt="notre page facebook")
+          a(href="#" title="notre page instagram")
+            img.img-rs(src="../src/images/picto-instagram.png" alt=" ")
             p INSTAGRAM
 
   if type === "accessibility"
     .popup#popup-accessibility
-      button.cross(type="button")
+      button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       h1.popup-title ACCESSIBILITE
       p.popup-content#popup-content-accessibility 

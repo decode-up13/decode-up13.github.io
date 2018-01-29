@@ -24,20 +24,20 @@ block content
       .block-content__left
         p.description Le bikini est présenté la première fois le 5 juillet 1946 à la Piscine Molitor de Paris. Très vite, il est interdit en Espagne, Italie et Belgique puis, condamné par le Vatican.
         .anchor-bikini  
-          img.anchor-bikini-img(src="src/images/bikini/boucle.svg")
-          img.anchor-bikini-hover(src="src/images/bikini/boucle-hover.png")
+          img.anchor-bikini-img(src="src/images/bikini/boucle.svg" alt=" ")
+          img.anchor-bikini-hover(src="src/images/bikini/boucle-hover.png" alt=" ")
       .block-content__middle    
         .picto-container
-          img.picto-bow(src="src/images/bikini/bow.svg" alt="")
+          img.picto-bow(src="src/images/bikini/bow.svg" alt=" ")
           .picto-element-bikini.picto-element-bikini__photo#js-picto-photo
-            img.picto(src="src/images/picto-photo-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-photo-dashed.svg" alt="voir les ressources visuelles")
+            img.picto-hover(src="src/images/picto-photo-dashed-hover.svg" alt="voir les ressources visuelles")
           .picto-element-bikini.picto-element-bikini__paper#js-picto-paper
-            img.picto(src="src/images/picto-paper-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-paper-dashed.svg" alt="lire la description")
+            img.picto-hover(src="src/images/picto-paper-dashed-hover.svg" alt="lire la description")
           .picto-element-bikini.picto-element-bikini__camera#js-picto-video
-            img.picto(src="src/images/picto-camera-dashed.svg" alt="")
-            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="")
+            img.picto(src="src/images/picto-camera-dashed.svg" alt="voir les vidéos")
+            img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="voir les vidéos")
     
   +popup("paper")
     h3.title petite histoire du bikini
@@ -46,20 +46,20 @@ block content
     p.text Le bikini est finalement accepté en 1956 avec la libération des moeurs. L’icône du cinéma américain, Marilyn Monroe défraie la chronique en 1953 en s’affichant avec un bikini
   +popup("photo") 
     .slide-container 
-      .slide-element
-        img.popup-img(src="src/images/bikini/popup-bikini-1.jpg")
+      .slide-element <!-- les alts sont laissés vides pour éviter les redondances avec la légende --> 
+        img.popup-img(src="src/images/bikini/popup-bikini-1.jpg" alt=" ")
         .popup-caption 
           p Mosaïques de la série « Les Filles en bikini » (env. 300 ap. J.-C.) à la Villa del Casale, Sicile.
       .slide-element
-        img.popup-img(src="src/images/bikini/popup-bikini-3.jpg")
+        img.popup-img(src="src/images/bikini/popup-bikini-3.jpg" alt=" ")
         .popup-caption 
           p 1962 : Ursula Andress dans James Bond contre Dr NO
       .slide-element
-        img.popup-img(src="src/images/bikini/popup-bikini-4.jpg")
+        img.popup-img(src="src/images/bikini/popup-bikini-4.jpg" alt=" ")
         .popup-caption 
           p Louis Réard, inventeur du bikini.
       .slide-element
-        img.popup-img(src="src/images/bikini/popup-bikini-5.jpg")
+        img.popup-img(src="src/images/bikini/popup-bikini-5.jpg" alt=" ")
         .popup-caption 
           p L'atoll de Bikini, îles Marshall.
   +popup("video") 
