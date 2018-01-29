@@ -19,10 +19,10 @@ block vars
 block content
   //- page content
   .content-wrapper
-    h1.title le bikini
+    h1.title.toTranslate(data-translationid="chapter2_title" data-translationtype="html") le bikini
     .block-content.flex  
       .block-content__left
-        p.description Le bikini est présenté la première fois le 5 juillet 1946 à la Piscine Molitor de Paris. Très vite, il est interdit en Espagne, Italie et Belgique puis, condamné par le Vatican.
+        p.description.toTranslate(data-translationid="chapter2_description" data-translationtype="html") Le bikini est présenté la première fois le 5 juillet 1946 à la Piscine Molitor de Paris. Très vite, il est interdit en Espagne, Italie et Belgique puis, condamné par le Vatican.
         .anchor-bikini  
           img.anchor-bikini-img(src="src/images/bikini/boucle.svg" alt=" ")
           img.anchor-bikini-hover(src="src/images/bikini/boucle-hover.png" alt=" ")
@@ -40,28 +40,28 @@ block content
             img.picto-hover(src="src/images/picto-camera-dashed-hover.svg" alt="voir les vidéos")
     
   +popup("paper")
-    h3.title petite histoire du bikini
-    p.text Un mot sexy. Un mot court.  Le bikini est d’origine française. C’est l’ingénieur automobile Louis Réard qui, en juin 1946 crée le maillot avec moins d’1m² de tissu. Il se compose uniquement d’un bandeau pour la poitrine et de deux triangles pour le bas. Le nombril est dévoilé pour la première fois !  
-    p.text La danseuse de cabaret Micheline Bernardini présente le bikini à la Piscine Molitor le 5 juillet 1946. Aucun mannequin n’ose à l’époque. En 1932, le couturier parisien Jacques Heim tenta de démocratiser un maillot de bain deux-pièces du nom “d’atome”.
-    p.text Le bikini est finalement accepté en 1956 avec la libération des moeurs. L’icône du cinéma américain, Marilyn Monroe défraie la chronique en 1953 en s’affichant avec un bikini
+    h3.title.toTranslate(data-translationid="chapter2_long-text_title" data-translationtype="html") Soleil, sable et bikini
+    p.text.toTranslate(data-translationid="chapter2_long-text_paragraph1" data-translationtype="html") Un mot sexy. Un autre court. Le bikini est d’origine française. C’est l’ingénieur automobile Louis Réard qui, en juin 1946 crée le maillot avec moins d’ 1m² de tissus. Il se compose uniquement d’un bandeau pour la poitrine et deux triangles pour le bas. Le nombril est dévoilé pour la première fois !
+    p.text.toTranslate(data-translationid="chapter2_long-text_paragraph2" data-translationtype="html") La danseuse de cabaret Micheline Bernardini présente le bikini à la Piscine Molitor le 5 juillet 1946. Aucun mannequin n’ose à l’époque. Bien plus tôt, en 1932, le couturier parisien Jacques Heim tenta de démocratiser un maillot de bain deux-pièces du nom “d’atome”.
+    p.text.toTranslate(data-translationid="chapter2_long-text_paragraph3" data-translationtype="html") Le bikini est finalement accepté en 1956 avec la libération des moeurs. L’icône du cinéma américain, Marilyn Monroe défraie la chronique en 1953 en s’affichant avec un bikini.
   +popup("photo") 
     .slide-container 
       .slide-element <!-- les alts sont laissés vides pour éviter les redondances avec la légende --> 
         img.popup-img(src="src/images/bikini/popup-bikini-1.jpg" alt=" ")
         .popup-caption 
-          p Mosaïques de la série « Les Filles en bikini » (env. 300 ap. J.-C.) à la Villa del Casale, Sicile.
+          p.toTranslate(data-translationid="" data-translationtype="html") Mosaïques de la série « Les Filles en bikini » (env. 300 ap. J.-C.) à la Villa del Casale, Sicile.
       .slide-element
         img.popup-img(src="src/images/bikini/popup-bikini-3.jpg" alt=" ")
         .popup-caption 
-          p 1962 : Ursula Andress dans James Bond contre Dr NO
+          p.toTranslate(data-translationid="" data-translationtype="html") 1962 : Ursula Andress dans James Bond contre Dr NO
       .slide-element
         img.popup-img(src="src/images/bikini/popup-bikini-4.jpg" alt=" ")
         .popup-caption 
-          p Louis Réard, inventeur du bikini.
+          p.toTranslate(data-translationid="" data-translationtype="html") Louis Réard, inventeur du bikini.
       .slide-element
         img.popup-img(src="src/images/bikini/popup-bikini-5.jpg" alt=" ")
         .popup-caption 
-          p L'atoll de Bikini, îles Marshall.
+          .toTranslate(data-translationid="" data-translationtype="html") L'atoll de Bikini, îles Marshall.
   +popup("video") 
     .slideshow  
       .slide.visible
