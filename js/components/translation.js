@@ -30,7 +30,10 @@ $(document).ready(function() {
   if (localStorage.getItem("lang") != undefined) {
     lang = localStorage.getItem("lang");
     translation(lang);
-  }
+  } else {
+		// default translation FR
+		translation("fr");
+	}
   $('.btn-lang').on('click', function() {
     lang = $(this).data('lang');
     localStorage.setItem("lang", lang);
