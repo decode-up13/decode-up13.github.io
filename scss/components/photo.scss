@@ -8,13 +8,13 @@
   z-index: 3;
   transform: translate(-50%, -50%);
   .popup-overlay {
-    width: 500%;
-    height: 500%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     opacity: 0.9;
     position: fixed;
-    top:-100%;
-    left:-100%;
+    top:-15vh;
+    right:-12.5vw;
   }
   .slide-container {
     width: 75vw;
@@ -75,9 +75,9 @@
     }
   }
   .cross {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: -15vh;
+    right: -12.5vw;
     z-index: 1;
     .cross-bar {
       &::before, &::after {
