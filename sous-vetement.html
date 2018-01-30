@@ -16,11 +16,11 @@
     <div class="chapter-page">
       <header class="top-navigation">
         <ul class="menu-list menu-lang">
-          <li class="menu-element btn-lang" data-lang="fr">français</li>
-          <li class="menu-element btn-lang" data-lang="en">english</li>
-          <li class="menu-element btn-lang" data-lang="es">español</li>
-          <li class="menu-element btn-lang" data-lang="ar">العربي</li>
-          <li class="menu-element btn-lang" data-lang="ja">日本の</li>
+          <li class="menu-element btn-lang" data-lang="fr" aria-label="traduire en français">français</li>
+          <li class="menu-element btn-lang" data-lang="en" aria-label="traduire en anglais">english</li>
+          <li class="menu-element btn-lang" data-lang="es" aria-label="traduire en espagnol">español</li>
+          <li class="menu-element btn-lang" data-lang="ar" aria-label="traduire en arabe">العربي</li>
+          <li class="menu-element btn-lang" data-lang="ja" aria-label="traduire en japonais">日本の</li>
         </ul>
         <button class="burger-menu toTranslate" type="button" data-translationid="aria-burger-menu" data-translationtype="aria-label" aria-label="ouvrir fermer le menu"><span class="bar"></span></button>
         <nav class="menu-left" id="menu-navigation">
@@ -55,21 +55,23 @@
           </div>
         </div>
         <div class="popup-paper">
-          <div class="popup-overlay"></div>
           <figure class="paper-open-vert" id="popup-paper">
             <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button><img src="./src/images/bg-paper-transparent.png" alt=""/>
             <figcaption>
-              <h3 class="title toTranslate" data-translationid="chapter1_long-text_title" data-translationtype="html">Quels sont vos gouts?</h3>
+              <h2 class="title toTranslate" data-translationid="chapter1_long-text_title" data-translationtype="html">Quels sont vos gouts?</h2>
               <p class="text toTranslate" data-translationid="chapter1_long-text_paragraph1" data-translationtype="html">Visible ou invisible, le sous-vêtement trouve toute sa splendeur et son élégance dans le confort. Il offre aux femmes une allure plus audacieuse dans l’habillement.</p>
               <p class="text toTranslate" data-translationid="chapter1_long-text_paragraph2" data-translationtype="html">Que ce soit un body, un boxer, un corset, un maillot de corps, un tanga ou encore le basique soutien-gorge, ces sous-vêtements répondent aux besoins des femmes, peu importe leur morphologie.</p>
             </figcaption>
           </figure>
         </div>
+        <div class="popup-paper-overlay">
+          <button class="cross" id="paper-cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button>
+        </div>
         <div class="popup-photo" id="popup-photo">
           <div class="popup-overlay"></div>
           <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button> 
-          <div class="slideshow"> 
-            <div class="slide"><img class="popup-img" src="src/images/underwear/popup-underwear-1.jpg" alt=" ">
+          <div class="slide-container">
+            <div class="slide-element"><img class="popup-img" src="src/images/underwear/popup-underwear-1.jpg" alt=" ">
               <div class="popup-caption"> 
                 <p class="toTranslate" data-translationid="chapter1_image_label1" data-translationtype="html">Madonna et son corset Jean-Paul Gaultier</p>
               </div>
@@ -77,9 +79,8 @@
           </div>
         </div>
         <div class="popup-video" id="popup-video">
-          <div class="popup-overlay"></div>
           <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button> 
-          <div class="slide-container">
+          <div class="slideshow">
             <div class="slide-element">
               <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QssFcT6PRiQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -91,7 +92,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div><img class="portrait-mode" src="../src/images/mobile-phone.svg" alt="basculer en mode paysage SVP">
       </main>
             <div class="popup" id="popup-about">
               <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button>

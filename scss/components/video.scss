@@ -2,30 +2,23 @@
   display: none;
   position: absolute;
   text-align: center;
-  height: 38.5vw;
-  width: 68vw;
-  background-color: black;
+  height: 210vh;
+  width: 101vw;
+  background-color: rgba(0, 0, 0, 0.65);
   top: 50%;
   left: 50%;
-  background-color: black;
   transform: translate(-50%, -50%);
   z-index: 3;
-  .popup-overlay {
-    width: 500%;
-    height: 500%;
-    background-color: black;
-    opacity: 0.9;
-    position: fixed;
-    top:-100%;
-    left:-100%;
+  .slide-container {
+    width: 75vw;
   }
   iframe {
     width: 68vw;
     height: 38.5vw;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0);
+    // position: absolute;
+    // bottom: 50%;
+    // left: 50%;
+    // transform: translate(-50%,50%);
     z-index: 4;
   }
   .popup-caption {
@@ -78,9 +71,9 @@
   .cross {
     margin: 0;
     position: absolute;
-    top: -36px;
-    right: -36px;
-    z-index: 1;
+    top: 55.5vh;
+    right: 1.5vw;
+    z-index: 3;
     .cross-bar {
       &::before, &::after {
         background: white;

@@ -29,10 +29,7 @@ h1 {
   font-size: 50px;
   letter-spacing: 2px;
 }
-h2 {
-  font-family: $Source-Sans-Pro-Bold;
-  font-size: 24px;
-}
+
 p {
   font-family: $Source-Sans-Pro-Regular;
   font-size: 16px;
@@ -105,6 +102,11 @@ main.wrapper {
   flex:1;
 }
 
+
+img.portrait-mode {
+  display: none;
+}
+
 // RESPONSIVE
 
 @media screen and (max-width: 960px) {
@@ -132,4 +134,29 @@ main.wrapper {
   margin-bottom: 40px;
 }
 
+img.portrait-mode {
+ display: none;
 }
+
+}
+
+
+// DISABLING PORTRAIT MODE
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)  {
+  img.portrait-mode {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 40vh;
+    width: 30vw;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5
+  }  
+  }

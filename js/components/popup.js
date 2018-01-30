@@ -20,6 +20,7 @@ $('#js-popup-rs').on('click', function() {
 
 $('#js-picto-paper').on('click', function() {
   $('#popup-paper').addClass('opened');
+  $('.popup-paper-overlay').css('display', 'block');
 });
 
 $('#js-picto-photo').on('click', function() {
@@ -30,6 +31,11 @@ $('#js-picto-video').on('click', function() {
   $('#popup-video').addClass('opened');
 });
 
+$('#paper-cross').on('click', function () {
+  $('.popup-paper-overlay').css('display', 'none');
+  $('#popup-paper').removeClass('active');
+  $('#popup-paper').removeClass('opened');
+});
 
 // SLIDESHOW PHOTO
 
