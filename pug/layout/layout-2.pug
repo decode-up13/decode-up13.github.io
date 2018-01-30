@@ -13,12 +13,14 @@ html(lang="fr")
 
 
   body(class=bodyClass)
+    
     .chapter-page
       include ../includes/header.pug
 
       main.wrapper
         block content
-        
+        img.portrait-mode(src="../src/images/mobile-phone.svg" alt="basculer en mode paysage SVP")
+
       include ../includes/footer.pug
 
   block scripts

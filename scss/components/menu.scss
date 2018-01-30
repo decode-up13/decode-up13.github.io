@@ -70,8 +70,6 @@
     &:hover:after {
       width: 70px;
       margin-left: 15px;
-
-    
     }
   }
 }
@@ -97,7 +95,6 @@ footer.wrapper {
   }
 }
 
-
 .logo-link {
   position: relative;
   &:hover {
@@ -109,14 +106,18 @@ footer.wrapper {
     }
   }
 }
+
 #logo-img-white, #logo-img {
   position: absolute;
   height: 60px;
   cursor: pointer;
 }
+
 #logo-img {
   display: none;
 }
+
+
 
 //
 // burger menu
