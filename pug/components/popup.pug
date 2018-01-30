@@ -22,6 +22,9 @@ mixin popup(type)
         img(src="./src/images/bg-paper-transparent.png" alt="")
         figcaption
           block
+    .popup-paper-overlay
+      button.cross#paper-cross(type="button" aria-label="retour au chapitre en cours")
+          span.cross-bar
   if type === "about"
     .popup#popup-about
       button.cross(type="button" aria-label="retour au chapitre en cours")
