@@ -44,13 +44,13 @@ block content
     p.text.toTranslate(data-translationid="chapter1_long-text_paragraph1" data-translationtype="html") Visible ou invisible, le sous-vêtement trouve toute sa splendeur et son élégance dans le confort. Il offre aux femmes une allure plus audacieuse dans l’habillement.
     p.text.toTranslate(data-translationid="chapter1_long-text_paragraph2" data-translationtype="html") Que ce soit un body, un boxer, un corset, un maillot de corps, un tanga ou encore le basique soutien-gorge, ces sous-vêtements répondent aux besoins des femmes, peu importe leur morphologie.
   +popup("photo") 
-    .slideshow  
-      .slide
+    .slide-container
+      .slide-element
         img.popup-img(src="src/images/underwear/popup-underwear-1.jpg" alt=" ")
         .popup-caption 
           p.toTranslate(data-translationid="chapter1_image_label1" data-translationtype="html") Madonna et son corset Jean-Paul Gaultier
   +popup("video") 
-    .slide-container
+    .slideshow
       .slide-element
         .video-container
           iframe(width="560" height="315" src="https://www.youtube.com/embed/QssFcT6PRiQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
