@@ -16,13 +16,12 @@ mixin popup(type)
       block
   if type === "paper"
     .popup-paper
-      .popup-overlay
-        figure.paper-open-vert#popup-paper
-          button.cross(type="button" aria-label="retour au chapitre en cours")
-            span.cross-bar
-          img(src="./src/images/bg-paper-transparent.png" alt="")
-          figcaption
-            block
+      figure.paper-open-vert#popup-paper
+        button.cross(type="button" aria-label="retour au chapitre en cours")
+          span.cross-bar
+        img(src="./src/images/bg-paper-transparent.png" alt="")
+        figcaption
+          block
   if type === "about"
     .popup#popup-about
       button.cross(type="button" aria-label="retour au chapitre en cours")
