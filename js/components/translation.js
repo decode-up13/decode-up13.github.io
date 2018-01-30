@@ -16,8 +16,11 @@ function translation(lang) {
 		    	case 'alt':
 					$(this).attr('alt',retour[id]);
 					break;
-					case 'aria-title':
-					$(this).attr('aria-title',retour[id]);
+					case 'aria-label':
+					$(this).attr('aria-label',retour[id]);
+					break;
+					case 'src':
+					$(this).attr('src',retour[id]);
 					break;
 					case 'title':
 					$(this).attr('title',retour[id]);
