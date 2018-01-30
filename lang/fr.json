@@ -1,6 +1,12 @@
 {
   "btn-begin": "commencer",
   "chapter-label": "chapitres",
+  "alt-decode-logo" : "logo de decode",
+  "alt-btn-video" : "voir les vidéos",
+  "alt-btn-text" : "lire la description",
+  "alt-btn-photo" : "voir les ressources visuelles",
+  "aria-burger-menu" : "ouvrir fermer le menu",
+  "title-logo" : "retour à l'accueil",
   "chapter1_title": "Le sous-vêtement",
   "chapter1_description": "L'histoire de la lingerie féminine remonte à l’Antiquité. Bandage, chemise, corset, soutien-gorge... Le sous-vêtement subit d'énormes transformations au fil des années.",
   "chapter1_long-text_title" : "Quels sont vos gouts ?",
