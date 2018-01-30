@@ -53,7 +53,6 @@
   /* ALL */
 
     .popup {
-        background-color: black;
         position: fixed;
         overflow-y: scroll;
         top: 0;
@@ -66,7 +65,7 @@
         transition: visibility 0s, opacity 0.5s linear;
         &.active {
           visibility: visible;
-          opacity: 0.85;
+          opacity: 1;
         }
 }
 
@@ -132,3 +131,40 @@
     margin-bottom: 10vh;
   }
   
+  /* Changing colors*/
+
+  .underwear {
+    .popup {
+      background-color:#DAB7B6;
+    }
+  }
+
+  .bikini {
+    .popup {
+      background-color: #716943;
+    }
+  }
+
+  .pantalon {
+    .popup {
+      background-color: black;
+    }
+  }
+
+  .mini-jupe {
+    .popup {
+      background-color: #ce8427;
+    }
+  }
+
+  .destroy {
+    .popup {
+      background-color:#c5d92c;
+    }
+  }
+
+  .jupe-homme {
+    .popup {
+     background-color: #46424d;
+    }
+  }
