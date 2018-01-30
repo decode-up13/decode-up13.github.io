@@ -1,6 +1,7 @@
 mixin popup(type)
   if type === "video"
     .popup-video#popup-video
+      .popup-overlay
       button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       //- .right-arrow
@@ -8,6 +9,7 @@ mixin popup(type)
       block
   if type === "photo"
     .popup-photo#popup-photo
+      .popup-overlay
       button.cross(type="button" aria-label="retour au chapitre en cours")
         span.cross-bar
       //- .right-arrow
@@ -15,6 +17,7 @@ mixin popup(type)
       block
   if type === "paper"
     .popup-paper
+      .popup-overlay
       figure.paper-open-vert#popup-paper
         button.cross(type="button" aria-label="retour au chapitre en cours")
           span.cross-bar
