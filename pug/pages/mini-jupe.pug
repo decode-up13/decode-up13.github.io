@@ -50,16 +50,16 @@ block content
         .popup-caption 
           p.toTranslate(data-translationid="chapter4_image_label1" data-translationtype="html") 6 juin 2015 : la journée de la mini-jupe à Tunis
   +popup("video") 
-    .slideshow  
-      .slide.visible
+    .slide-container  
+      .slide-element
         .video-container
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/lcMmEis7o9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      .slide.hidden
+          iframe.toTranslate(data-translationid="chapter4_video_src1" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/lcMmEis7o9U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .slide-element
         .video-container
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/2R35303JW5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      .slide.hidden
+          iframe.toTranslate(data-translationid="cchapter4_video_src2" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/2R35303JW5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .slide-element
         .video-container
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/h-c5TnDWdGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          iframe.toTranslate(data-translationid="chapter4_video_src3" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/h-c5TnDWdGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 
 append scripts
   //-additional scripts

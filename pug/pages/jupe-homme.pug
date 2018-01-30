@@ -54,13 +54,13 @@ block content
         .popup-caption 
           p.toTranslate(data-translationid="chapter6_image_label2" data-translationtype="html") La jupe pour homme commercialisée par Zara en 2014
   +popup("video") 
-    .slideshow  
-      .slide.visible
+    .slide-container
+      .slide-element
         .video-container
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/LwFUV88EBgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      .slide.hidden
+         iframe(data-translationid="chapter6_video_src1" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/LwFUV88EBgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .slide-element
         .video-container
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/oiu8jc6Ldno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         iframe(data-translationid="chapter6_video_src2" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/oiu8jc6Ldno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
  
 append scripts
   //-additional scripts

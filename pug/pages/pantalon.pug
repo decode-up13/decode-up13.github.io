@@ -58,13 +58,13 @@ block content
         .popup-caption 
           p.toTranslate(data-translationid="chapter3_image_label2" data-translationtype="html") Permission de travestissement, 1862
   +popup("video") 
-    .slideshow  
-      .slide.visible
+    .slide-container
+      .slide-element
         .video-container
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/g5yWBa2uym8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      .slide.hidden
+          iframe.toTranslate(data-translationid="chapter3_video_src1" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/g5yWBa2uym8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .slide-element
         .video-container
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/w4aZ2eT3ol8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          iframe.toTranslate(data-translationid="chapter3_video_src2" data-translationtype="src" width="560" height="315" src="https://www.youtube.com/embed/w4aZ2eT3ol8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 
 append scripts
   //-additional scripts

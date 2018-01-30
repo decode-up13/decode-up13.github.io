@@ -50,13 +50,13 @@ block content
         .popup-caption 
           p.toTranslate(data-translationid="chapter1_image_label1" data-translationtype="html") Madonna et son corset Jean-Paul Gaultier
   +popup("video") 
-    .slideshow
+    .slide-container
       .slide-element
         .video-container
-          iframe(width="560" height="315" src="https://www.youtube.com/embed/QssFcT6PRiQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+          iframe.toTranslate(width="560" height="315" data-translationid="chapter1_video_src1" data-translationtype="src" src="https://www.youtube.com/embed/QssFcT6PRiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
       .slide-element
         .video-container
-          iframe(width="560" height="315" src="https://www.youtube.com/embed/e3H-xkgRsJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>)
+          iframe.toTranslate(width="560" height="315" data-translationid="chapter1_video_src2" data-translationtype="src" src="https://www.youtube.com/embed/e3H-xkgRsJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>)
 
     
 append scripts
