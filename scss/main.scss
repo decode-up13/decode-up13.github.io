@@ -102,6 +102,7 @@ main.wrapper {
   flex:1;
 }
 
+
 img.portrait-mode {
   display: none;
 }
@@ -134,7 +135,7 @@ img.portrait-mode {
 }
 
 img.portrait-mode {
-  display: none;
+ display: none;
 }
 
 }
@@ -142,8 +143,9 @@ img.portrait-mode {
 
 // DISABLING PORTRAIT MODE
 
-@media only screen and (max-width : 320px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait)  {
   img.portrait-mode {
+    display: block;
     background-color: black;
     position: absolute;
     height: 40vh;
