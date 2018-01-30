@@ -16,11 +16,11 @@
     <div class="chapter-page">
       <header class="top-navigation">
         <ul class="menu-list menu-lang">
-          <li class="menu-element btn-lang" data-lang="fr">français</li>
-          <li class="menu-element btn-lang" data-lang="en">english</li>
-          <li class="menu-element btn-lang" data-lang="es">español</li>
-          <li class="menu-element btn-lang" data-lang="ar">العربي</li>
-          <li class="menu-element btn-lang" data-lang="ja">日本の</li>
+          <li class="menu-element btn-lang" data-lang="fr" aria-label="traduire en français">français</li>
+          <li class="menu-element btn-lang" data-lang="en" aria-label="traduire en anglais">english</li>
+          <li class="menu-element btn-lang" data-lang="es" aria-label="traduire en espagnol">español</li>
+          <li class="menu-element btn-lang" data-lang="ar" aria-label="traduire en arabe">العربي</li>
+          <li class="menu-element btn-lang" data-lang="ja" aria-label="traduire en japonais">日本の</li>
         </ul>
         <button class="burger-menu toTranslate" type="button" data-translationid="aria-burger-menu" data-translationtype="aria-label" aria-label="ouvrir fermer le menu"><span class="bar"></span></button>
         <nav class="menu-left" id="menu-navigation">
@@ -55,7 +55,6 @@
           </div>
         </div>
         <div class="popup-paper">
-          <div class="popup-overlay"></div>
           <figure class="paper-open-vert" id="popup-paper">
             <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button><img src="./src/images/bg-paper-transparent.png" alt=""/>
             <figcaption>
@@ -65,11 +64,14 @@
             </figcaption>
           </figure>
         </div>
+        <div class="popup-paper-overlay">
+          <button class="cross" id="paper-cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button>
+        </div>
         <div class="popup-photo" id="popup-photo">
           <div class="popup-overlay"></div>
           <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button>
-          <div class="slideshow">  <!-- les alts sont laissés vides pour éviter la redondance avec la légende --> 
-            <div class="slide visible"><img class="popup-img" src="src/images/mini-jupe/popup-mini-jupe-1.jpg" alt=" ">
+          <div class="slide-container">  <!-- les alts sont laissés vides pour éviter la redondance avec la légende --> 
+            <div class="slide-element visible"><img class="popup-img" src="src/images/mini-jupe/popup-mini-jupe-1.jpg" alt=" ">
               <div class="popup-caption"> 
                 <p class="toTranslate" data-translationid="chapter4_image_label1" data-translationtype="html">6 juin 2015 : la journée de la mini-jupe à Tunis</p>
               </div>
@@ -77,7 +79,6 @@
           </div>
         </div>
         <div class="popup-video" id="popup-video">
-          <div class="popup-overlay"></div>
           <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button> 
           <div class="slideshow"> 
             <div class="slide visible">

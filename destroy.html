@@ -16,11 +16,11 @@
     <div class="chapter-page">
       <header class="top-navigation">
         <ul class="menu-list menu-lang">
-          <li class="menu-element btn-lang" data-lang="fr">français</li>
-          <li class="menu-element btn-lang" data-lang="en">english</li>
-          <li class="menu-element btn-lang" data-lang="es">español</li>
-          <li class="menu-element btn-lang" data-lang="ar">العربي</li>
-          <li class="menu-element btn-lang" data-lang="ja">日本の</li>
+          <li class="menu-element btn-lang" data-lang="fr" aria-label="traduire en français">français</li>
+          <li class="menu-element btn-lang" data-lang="en" aria-label="traduire en anglais">english</li>
+          <li class="menu-element btn-lang" data-lang="es" aria-label="traduire en espagnol">español</li>
+          <li class="menu-element btn-lang" data-lang="ar" aria-label="traduire en arabe">العربي</li>
+          <li class="menu-element btn-lang" data-lang="ja" aria-label="traduire en japonais">日本の</li>
         </ul>
         <button class="burger-menu toTranslate" type="button" data-translationid="aria-burger-menu" data-translationtype="aria-label" aria-label="ouvrir fermer le menu"><span class="bar"></span></button>
         <nav class="menu-left" id="menu-navigation">
@@ -55,7 +55,6 @@
           </div>
         </div>
         <div class="popup-paper">
-          <div class="popup-overlay"></div>
           <figure class="paper-open-vert" id="popup-paper">
             <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button><img src="./src/images/bg-paper-transparent.png" alt=""/>
             <figcaption>
@@ -64,6 +63,9 @@
               <p class="text toTranslate" data-translationid="chapter5_long-text_paragraph2" data-translationtype="html">Les pièces destroys conviennent parfaitement au goût vestimentaire de cette nouvelle génération. Les déchirures et trous se font manuellement.  </p>
             </figcaption>
           </figure>
+        </div>
+        <div class="popup-paper-overlay">
+          <button class="cross" id="paper-cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button>
         </div>
         <div class="popup-photo" id="popup-photo">
           <div class="popup-overlay"></div>
@@ -82,7 +84,6 @@
           </div>
         </div>
         <div class="popup-video" id="popup-video">
-          <div class="popup-overlay"></div>
           <button class="cross" type="button" aria-label="retour au chapitre en cours"><span class="cross-bar"></span></button> 
           <div class="slideshow"> 
             <div class="slide visible">
