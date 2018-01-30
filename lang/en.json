@@ -1,6 +1,12 @@
 {
   "btn-begin": "begin",
   "chapter-label": "chapters",
+  "alt-decode-logo" : "decode's logo",
+  "alt-btn-video" : "watch the videos",
+  "alt-btn-text" : "read description",
+  "alt-btn-photo" : "see photo ressources",
+  "aria-burger-menu" : "open close menu",
+  "title-logo" : "back to home",
   "chapter1_title": "Underwear",
   "chapter1_description": "The story of women's lingerie dates back to the Antiquity. Bandage, shirt, corset, bra, monokini, thong... Underwear has seen changes over the years.",
   "chapter1_long-text_title" : "What are your tastes ? ",
