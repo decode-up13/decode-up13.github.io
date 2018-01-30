@@ -45,9 +45,15 @@
   "chapter6_image_label1" : "",
   "chapter6_image_label2" : "",
   "label-btn-accessibility": "accessibilité",
-  "label-btn-about": "à propos",
-  "label-btn-credits": "crédits"
+  "accessibility-text" : "Le groupe 2 de l’UE4 s’engage à assurer l’accessibilité de son web documentaire dans le but de le rendre compréhensible au plus grand nombre, et plus particulièrement aux personnes ne parlant pas le français et aux personnes en situation de handicap visuel ou auditif.</br></br>Pour ce faire, nous avons veiller à respecter les critères de l’accessibilité tels qu’énoncés par la WAI.</br></br>Nous avons mis un point d’honneur à respecter plus particulièrement les règles suivantes:</br></br>Pour la navigation : le code couleur n’est pas le seul point de repère dans la navigation, les titres sont concis et explicites.</br>Pour la lisibilité : la police est sans sérif, le contraste de luminosité entre la couleur de police et la couleur de fond est suffisamment net, la taille de police n’est jamais inférieur à 12px, l’utilisation de l’italique et du soulignement est limitée, le texte n’est pas justifié.</br>Pour les images : la balise alt du code HTML est renseignée dès que nécessaire (et  si elle est renseignée, elle contient une description pertinente de l’image).</br>Pour les vidéos : elles sont systématiquement sous-titrées, en Français, Arabe et Anglais, il est possible de contrôler le volume sonore et l’avancement de la vidéo.</br></br>D’une manière générale, notre site est accessible en 3 langues : français, arabe et anglais. Nous avons prêté attention à diversifier les contenus multimédias pour enrichir l’expérience de tous (audio, visuelle, textuelle).</br></br>Nous avons audité l’accessibilité de notre site internet, et nous avons obtenu la note de",
+  "label-btn-about" : "à propos",
+  "about-text" : "",
+  "label-btn-credits": "crédits",
+  "credits-text" : "“Tenue correcte exigée, quand le vêtement fait scandale” est un documentaire original réalisé par Julia Bracher en 2016.</br></br>Ce web-documentaire est une réalisation d’étudiants de la promotion 2017/2018 du Master 1 Innovations en Communication et Master 1 Design d’interface multimédia et internet de l’Université Paris 13.</br></br>Chef de projet : Sophie GOMIS</br>Responsable qualité  : Rania DRIDI</br>Responsable design d’expérience : Solenn MASSENGO</br> Responsable accessibilité : Léa MARIE</br>Responsable éditorial : Hawa-Kany FOFANA</br>Responsable des contenus audiovisuels : Khadim DIOUF</br>Responsable développement: Tojo ANDRIAMANGA</br>Chargées de contenu : Léa MARIE / Sophie GOMIS</br>Rédacteurs : Jessica KABASSEMA / Nadia BEN FADHEL / Rania DRIDI / Khadim DIOUF/ Hawa-Kany FOFANA</br>Directeur artistique : Solenn MASSENGO</br>Designers UX : Solenn MASSENGO / Cheikh DIONE</br>Designers d’interaction : Solenn MASSENGO / Tojo ANDRIAMANGA / Léa MARIE</br>Graphiste : Solenn MASSENGO</br>Développeurs Front-End : Tojo ANDRIAMANGA / Léa MARIE / Nadia BEN FADHEL</br>Architecte d'information : Solenn MASSENGO / Cheikh DIONE</br></br>Merci à Guy BILISKO, Ines LAITANO et Hernani CORREIA pour leur accompagnement.</br></br>Contact : webdocdimic2017@gmail.com</br></br>Droit d’auteur : ©Julia Bracher</br></br>Crédits image : © Jean Paul Gaultier - © Balmain lookbook AH15 - ©Yves Saint Laurent - ©Andreas Kronthaler for Vivienne Westwood AW17/18 Campaign - Collection de jupes masculines signées Jean-Paul Gaultier © DR-  ©Reard paris collection Printemps / Été 2017 |MARILYN - ©Andreas Kronthaler for Vivienne Westwood AW17/18 Campaign"
 }
+
+
+
 
 
 
